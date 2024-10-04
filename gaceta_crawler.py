@@ -90,4 +90,4 @@ if __name__ == '__main__':
             break
         get_next_page(driver)
 
-    # driver.quit()
+    driver.quit()
