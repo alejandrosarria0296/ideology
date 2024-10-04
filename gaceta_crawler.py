@@ -1,15 +1,10 @@
 import os
-import requests
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin
-import pandas as pd
-import numpy as np
-import re
+import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
-import time
+from selenium.common.exceptions import NoSuchElementException
 
 def setup_driver(download_folder, url):
     # Set Chrome options to download files automatically
@@ -37,17 +32,20 @@ def setup_driver(download_folder, url):
     # Set up the driver with ChromeDriver
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
     driver.get(url)
+    input_element = driver.find_element(By.ID, "formResumen:dataTableResumen:j_idt20:filter")
+    input_element.send_keys("Acta")
+
     return driver
 
-base_url = r'http://svrpubindc.imprenta.gov.co/senado/'
-download_path = r"C:\Users\asarr\Documents\MACSS\Thesis\data"
-
-def get_docs(driver):
+def get_docs(driver, download_folder):
     buttons = driver.find_elements(By.XPATH, "//button[@title='Descargar Pdf']")
-    for button in buttons:
+    labels = [label.text for label in driver.find_elements(By.XPATH, "//label[contains(@id, 'j_idt12')]")]
+    for i, button in enumerate(buttons):
         try:
-            button.click()
-            time.sleep(2)
+            file_name = f"gaceta_{labels[i]}.pdf"
+            if not os.path.exists(os.path.join(download_folder, file_name)):
+                button.click()
+                time.sleep(2)
         except:
             pass
 
@@ -68,8 +66,28 @@ def wait_for_downloads(download_folder, timeout=30):
             print("Download timed out.")
             break
 
+def get_next_page(driver):
+    next_button = driver.find_element(By.CLASS_NAME, "ui-paginator-next")
+    next_button.click()
+    time.sleep(5)
+
+def is_last_page(driver):
+    try:
+        driver.find_element(By.XPATH, "//span[contains(@class, 'ui-paginator-next') and contains(@class, 'ui-state-disabled')]")
+        return True
+    except NoSuchElementException:
+        return False
+
 if __name__ == '__main__':
+    base_url = r'http://svrpubindc.imprenta.gov.co/senado/'
+    download_path = r"C:\Users\asarr\Documents\MACSS\Thesis\data"
     driver = setup_driver(download_path, base_url)
-    get_docs(driver)
-    wait_for_downloads(download_path, 60)
-    driver.quit()
+
+    while True:
+        get_docs(driver, download_path)
+        wait_for_downloads(download_path, 600)
+        if is_last_page(driver):
+            break
+        get_next_page(driver)
+
+    # driver.quit()
