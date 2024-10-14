@@ -80,7 +80,7 @@ def is_last_page(driver):
 
 if __name__ == '__main__':
     base_url = r'http://svrpubindc.imprenta.gov.co/senado/'
-    download_path = r"C:\Users\asarr\Documents\MACSS\Thesis\data"
+    download_path = r"D:\Thesis\raw_files"
     driver = setup_driver(download_path, base_url)
 
     while True:
