@@ -23,7 +23,7 @@ if __name__ == "__main__":
     schema = StructType([
         StructField("session", StringType(), True),
         StructField("id", IntegerType(), True),
-        StructField("interventions", ArrayType(StringType()), True)
+        StructField("interventions", StringType(), True)  # Read as StringType initially
     ])
     
     # Load the CSV file
