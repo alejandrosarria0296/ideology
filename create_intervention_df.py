@@ -25,8 +25,13 @@ if __name__ == "__main__":
     ])
     
     # Load the CSV file
-    original_df = r"data/session_texts.csv"
-    df = spark.read.csv(original_df, schema=schema, header=True)
+    original_df = r"/home/asarria/ideology/data/session_texts.csv"
+    print("Starting Spark job...")
+    try:
+        df = spark.read.csv(original_df, schema=schema, header=True)
+        print("CSV file read successfully")
+    except Exception as e:
+        print(f"Error reading CSV file: {e}")
     
     # Process interventions
     intervention_df = create_intervention_df(df)
