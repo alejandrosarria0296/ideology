@@ -39,7 +39,7 @@ if __name__ == "__main__":
     intervention_df = create_intervention_df(df)
     
     # Save the result to CSV
-    intervention_df.coalesce(1).write.csv(r"data/interventions.csv", header=True, mode="overwrite")
+    intervention_df.coalesce(1).write.csv(r"data/interventions.csv", header=True, mode="DROPMALFORMED")
     print("Number of rows in intervention DataFrame:", intervention_df.count())
     # Stop the Spark session
     spark.stop()
