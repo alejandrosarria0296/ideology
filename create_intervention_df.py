@@ -5,6 +5,8 @@ from pyspark.sql.types import StructType, StructField, StringType, ArrayType, In
 # Initialize Spark session
 spark = SparkSession.builder \
     .appName("Create Intervention DataFrame") \
+    .config("spark.sql.files.maxPartitionBytes", "256MB") \
+    .config("spark.sql.files.maxRecordLength", "134217728") \
     .getOrCreate()
 
 def create_intervention_df(df):
@@ -23,14 +25,15 @@ if __name__ == "__main__":
     schema = StructType([
         StructField("session", StringType(), True),
         StructField("id", IntegerType(), True),
-        StructField("interventions", StringType(), True)  # Read as StringType initially
+        StructField("interventions", StringType(), True)
     ])
     
     # Load the CSV file
     original_df = r"/home/asarria/ideology/data/session_texts.csv"
     print("Starting Spark job...")
     try:
-        df = spark.read.csv(original_df, schema=schema, header=True)
+        df = spark.read.csv(original_df, schema=schema, header=True, 
+                            multiLine=True, escape='"', maxCharsPerColumn=2048000)
         print("CSV file read successfully")
     except Exception as e:
         print(f"Error reading CSV file: {e}")
