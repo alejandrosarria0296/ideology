@@ -14,9 +14,9 @@ def create_intervention_df(df):
     exploded_df = df.withColumn("intervention", explode(col("interventions")))
     
     # Add a unique ID for each intervention
-    intervention_df = exploded_df.withColumn("id", monotonically_increasing_id())
+    intervention_df = exploded_df.withColumn("int_id", monotonically_increasing_id())
     
-    return intervention_df.select("session", "id", "intervention")
+    return intervention_df.select("session", "int_id", "intervention")
 
 if __name__ == "__main__":
     # Define schema for CSV file
@@ -39,7 +39,7 @@ if __name__ == "__main__":
     intervention_df = create_intervention_df(df)
     
     # Save the result to CSV
-    intervention_df.coalesce(1).write.csv(r"data/interventions.csv", header=True)
+    intervention_df.write.csv(r"data/interventions", header=True, mode="overwrite")
     print("Number of rows in intervention DataFrame:", intervention_df.count())
     # Stop the Spark session
     spark.stop()
