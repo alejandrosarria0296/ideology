@@ -13,8 +13,8 @@ def create_intervention_df(df):
     df = df.withColumn("interventions", split(col("interventions"), ","))
 
     # Explode the 'interventions' array into individual rows
-    exploded_df = df.withColumn("intervention", explode(col("interventions")))
-    
+    exploded_df = df.withColumn("intervention", explode(col("interventions")))    
+
     # Add a unique ID for each intervention
     intervention_df = exploded_df.withColumn("int_id", monotonically_increasing_id())
     
@@ -23,16 +23,21 @@ def create_intervention_df(df):
 if __name__ == "__main__":
     # Define schema for CSV file
     schema = StructType([
-        StructField("session", StringType(), True),
         StructField("id", IntegerType(), True),
-        StructField("interventions", StringType(), True)
+        StructField("date", StringType(), True),
+        StructField("chamber", StringType(), True),
+        StructField("type", StringType(), True),
+        StructField("raw_text", StringType(), True),
+        StructField("clean_text", StringType(), True),
+        StructField("intervention_pairs", StringType(), True),
+        StructField("interventions", ArrayType(ArrayType(StringType())), True)  # Array of lists
     ])
     
     # Load the CSV file
     original_df = r"/home/asarria/ideology/data/session_texts.csv"
     print("Starting Spark job...")
     try:
-        df = spark.read.csv(original_df, schema=schema, header=True, 
+        df = spark.read.csv(original_df, schema=schema, header=True,
                             multiLine=True, escape='"', maxCharsPerColumn=2048000)
         print("CSV file read successfully")
     except Exception as e:
