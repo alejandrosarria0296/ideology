@@ -1,5 +1,5 @@
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import explode, col, split, monotonically_increasing_id
+from pyspark.sql.functions import explode, col, split, monotonically_increasing_id, expr
 from pyspark.sql.types import StructType, StructField, StringType, ArrayType, IntegerType
 
 # Initialize Spark session
@@ -10,7 +10,8 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 def create_intervention_df(df):
-    df = df.withColumn("interventions", split(col("interventions"), ","))
+    df = df.withColumn("interventions", 
+                       expr("transform(split(interventions, '\\], \\['), x -> split(regexp_replace(x, '[\\[\\]]', ''), ', '))"))
 
     # Explode the 'interventions' array into individual rows
     exploded_df = df.withColumn("intervention", explode(col("interventions")))    
@@ -30,7 +31,7 @@ if __name__ == "__main__":
         StructField("raw_text", StringType(), True),
         StructField("clean_text", StringType(), True),
         StructField("intervention_pairs", StringType(), True),
-        StructField("interventions", ArrayType(ArrayType(StringType())), True)  # Array of lists
+        StructField("interventions", StringType(), True)
     ])
     
     # Load the CSV file
