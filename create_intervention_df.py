@@ -1,5 +1,5 @@
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import explode, col, split, monotonically_increasing_id, expr
+from pyspark.sql.functions import explode, col, split, monotonically_increasing_id, expr, concat_ws
 from pyspark.sql.types import StructType, StructField, StringType, ArrayType, IntegerType
 
 # Initialize Spark session
@@ -17,7 +17,8 @@ def create_intervention_df(df):
     exploded_df = df.withColumn("intervention", explode(col("interventions")))    
 
     # Add a unique ID for each intervention
-    intervention_df = exploded_df.withColumn("int_id", monotonically_increasing_id())
+    intervention_df = exploded_df.withColumn("int_id", monotonically_increasing_id()) \
+                                    .withColumn("intervention", concat_ws(", ", col("intervention")))
     
     return intervention_df.select(col("id").alias("session"), "int_id", "intervention")
 
