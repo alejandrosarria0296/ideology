@@ -19,7 +19,7 @@ def create_intervention_df(df):
     # Add a unique ID for each intervention
     intervention_df = exploded_df.withColumn("int_id", monotonically_increasing_id())
     
-    return intervention_df.select("id", "int_id", "intervention")
+    return intervention_df.select(col("id").alias("session"), "int_id", "intervention")
 
 if __name__ == "__main__":
     # Define schema for CSV file
