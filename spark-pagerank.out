@@ -1,83 +1,137 @@
-24/11/01 14:04:18 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-24/11/01 14:04:20 INFO SparkContext: Running Spark version 3.3.2
-24/11/01 14:04:20 INFO ResourceUtils: ==============================================================
-24/11/01 14:04:20 INFO ResourceUtils: No custom resources configured for spark.driver.
-24/11/01 14:04:20 INFO ResourceUtils: ==============================================================
-24/11/01 14:04:20 INFO SparkContext: Submitted application: Create Intervention DataFrame
-24/11/01 14:04:20 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
-24/11/01 14:04:20 INFO ResourceProfile: Limiting resource is cpu
-24/11/01 14:04:20 INFO ResourceProfileManager: Added ResourceProfile id: 0
-24/11/01 14:04:20 INFO SecurityManager: Changing view acls to: asarria
-24/11/01 14:04:20 INFO SecurityManager: Changing modify acls to: asarria
-24/11/01 14:04:20 INFO SecurityManager: Changing view acls groups to: 
-24/11/01 14:04:20 INFO SecurityManager: Changing modify acls groups to: 
-24/11/01 14:04:20 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(asarria); groups with view permissions: Set(); users  with modify permissions: Set(asarria); groups with modify permissions: Set()
-24/11/01 14:04:20 INFO Utils: Successfully started service 'sparkDriver' on port 39079.
-24/11/01 14:04:20 INFO SparkEnv: Registering MapOutputTracker
-24/11/01 14:04:20 INFO SparkEnv: Registering BlockManagerMaster
-24/11/01 14:04:20 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
-24/11/01 14:04:20 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
-24/11/01 14:04:20 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
-24/11/01 14:04:20 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-999ffaa0-79ad-4a72-b042-412be5da9488
-24/11/01 14:04:20 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
-24/11/01 14:04:20 INFO SparkEnv: Registering OutputCommitCoordinator
-24/11/01 14:04:20 INFO Utils: Successfully started service 'SparkUI' on port 4040.
-24/11/01 14:04:20 INFO SparkContext: Added JAR file:///project/macs40123/spark-jars/graphframes-0.8.3-spark3.4-s_2.12.jar at spark://midway3-0026.rcc.local:39079/jars/graphframes-0.8.3-spark3.4-s_2.12.jar with timestamp 1730487860420
-24/11/01 14:04:21 INFO Executor: Starting executor ID driver on host midway3-0026.rcc.local
-24/11/01 14:04:21 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
-24/11/01 14:04:21 INFO Executor: Fetching spark://midway3-0026.rcc.local:39079/jars/graphframes-0.8.3-spark3.4-s_2.12.jar with timestamp 1730487860420
-24/11/01 14:04:21 INFO TransportClientFactory: Successfully created connection to midway3-0026.rcc.local/10.50.250.26:39079 after 18 ms (0 ms spent in bootstraps)
-24/11/01 14:04:21 INFO Utils: Fetching spark://midway3-0026.rcc.local:39079/jars/graphframes-0.8.3-spark3.4-s_2.12.jar to /tmp/spark-9f511b63-d0e7-4f21-9eec-f113cf5426f6/userFiles-5c6535b2-f2cb-450d-b842-9b53a3e35a8a/fetchFileTemp13172907903863335675.tmp
-24/11/01 14:04:21 INFO Executor: Adding file:/tmp/spark-9f511b63-d0e7-4f21-9eec-f113cf5426f6/userFiles-5c6535b2-f2cb-450d-b842-9b53a3e35a8a/graphframes-0.8.3-spark3.4-s_2.12.jar to class loader
-24/11/01 14:04:21 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46129.
-24/11/01 14:04:21 INFO NettyBlockTransferService: Server created on midway3-0026.rcc.local:46129
-24/11/01 14:04:21 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
-24/11/01 14:04:21 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, midway3-0026.rcc.local, 46129, None)
-24/11/01 14:04:21 INFO BlockManagerMasterEndpoint: Registering block manager midway3-0026.rcc.local:46129 with 434.4 MiB RAM, BlockManagerId(driver, midway3-0026.rcc.local, 46129, None)
-24/11/01 14:04:21 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, midway3-0026.rcc.local, 46129, None)
-24/11/01 14:04:21 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, midway3-0026.rcc.local, 46129, None)
+24/11/05 11:28:00 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/11/05 11:28:03 INFO SparkContext: Running Spark version 3.3.2
+24/11/05 11:28:03 INFO ResourceUtils: ==============================================================
+24/11/05 11:28:03 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/11/05 11:28:03 INFO ResourceUtils: ==============================================================
+24/11/05 11:28:03 INFO SparkContext: Submitted application: Create Intervention DataFrame
+24/11/05 11:28:03 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/11/05 11:28:03 INFO ResourceProfile: Limiting resource is cpu
+24/11/05 11:28:03 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/11/05 11:28:03 INFO SecurityManager: Changing view acls to: asarria
+24/11/05 11:28:03 INFO SecurityManager: Changing modify acls to: asarria
+24/11/05 11:28:03 INFO SecurityManager: Changing view acls groups to: 
+24/11/05 11:28:03 INFO SecurityManager: Changing modify acls groups to: 
+24/11/05 11:28:03 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(asarria); groups with view permissions: Set(); users  with modify permissions: Set(asarria); groups with modify permissions: Set()
+24/11/05 11:28:04 INFO Utils: Successfully started service 'sparkDriver' on port 43493.
+24/11/05 11:28:04 INFO SparkEnv: Registering MapOutputTracker
+24/11/05 11:28:04 INFO SparkEnv: Registering BlockManagerMaster
+24/11/05 11:28:04 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/11/05 11:28:04 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/11/05 11:28:04 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/11/05 11:28:04 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-651911b0-a450-4fcd-8eb9-e9dbf368d008
+24/11/05 11:28:04 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+24/11/05 11:28:04 INFO SparkEnv: Registering OutputCommitCoordinator
+24/11/05 11:28:04 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+24/11/05 11:28:04 INFO SparkContext: Added JAR file:///project/macs40123/spark-jars/graphframes-0.8.3-spark3.4-s_2.12.jar at spark://midway3-0212.rcc.local:43493/jars/graphframes-0.8.3-spark3.4-s_2.12.jar with timestamp 1730827683905
+24/11/05 11:28:04 INFO Executor: Starting executor ID driver on host midway3-0212.rcc.local
+24/11/05 11:28:04 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/11/05 11:28:04 INFO Executor: Fetching spark://midway3-0212.rcc.local:43493/jars/graphframes-0.8.3-spark3.4-s_2.12.jar with timestamp 1730827683905
+24/11/05 11:28:04 INFO TransportClientFactory: Successfully created connection to midway3-0212.rcc.local/10.50.250.212:43493 after 18 ms (0 ms spent in bootstraps)
+24/11/05 11:28:04 INFO Utils: Fetching spark://midway3-0212.rcc.local:43493/jars/graphframes-0.8.3-spark3.4-s_2.12.jar to /tmp/spark-e723a43d-2a40-4bb0-a105-f1986a268dc0/userFiles-8b2b1dff-f4a9-4729-a3b4-4e33d4259ef7/fetchFileTemp8846656179095978947.tmp
+24/11/05 11:28:04 INFO Executor: Adding file:/tmp/spark-e723a43d-2a40-4bb0-a105-f1986a268dc0/userFiles-8b2b1dff-f4a9-4729-a3b4-4e33d4259ef7/graphframes-0.8.3-spark3.4-s_2.12.jar to class loader
+24/11/05 11:28:04 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 34115.
+24/11/05 11:28:04 INFO NettyBlockTransferService: Server created on midway3-0212.rcc.local:34115
+24/11/05 11:28:04 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/11/05 11:28:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, midway3-0212.rcc.local, 34115, None)
+24/11/05 11:28:04 INFO BlockManagerMasterEndpoint: Registering block manager midway3-0212.rcc.local:34115 with 434.4 MiB RAM, BlockManagerId(driver, midway3-0212.rcc.local, 34115, None)
+24/11/05 11:28:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, midway3-0212.rcc.local, 34115, None)
+24/11/05 11:28:04 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, midway3-0212.rcc.local, 34115, None)
 Starting Spark job...
-24/11/01 14:04:21 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
-24/11/01 14:04:21 INFO SharedState: Warehouse path is 'file:/home/asarria/ideology/spark-warehouse'.
-24/11/01 14:04:21 INFO InMemoryFileIndex: It took 25 ms to list leaf files for 1 paths.
+24/11/05 11:28:04 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+24/11/05 11:28:04 INFO SharedState: Warehouse path is 'file:/home/asarria/ideology/spark-warehouse'.
+24/11/05 11:28:05 INFO InMemoryFileIndex: It took 25 ms to list leaf files for 1 paths.
 CSV file read successfully
-24/11/01 14:04:23 INFO FileSourceStrategy: Pushed Filters: 
-24/11/01 14:04:23 INFO FileSourceStrategy: Post-Scan Filters: (size(split(interventions#2, ,, -1), true) > 0),isnotnull(split(interventions#2, ,, -1))
-24/11/01 14:04:23 INFO FileSourceStrategy: Output Data Schema: struct<session: string, interventions: string>
-24/11/01 14:04:23 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
-24/11/01 14:04:23 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
-24/11/01 14:04:23 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
-24/11/01 14:04:23 INFO CodeGenerator: Code generated in 133.775546 ms
-24/11/01 14:04:23 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 199.9 KiB, free 434.2 MiB)
-24/11/01 14:04:24 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 34.3 KiB, free 434.2 MiB)
-24/11/01 14:04:24 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on midway3-0026.rcc.local:46129 (size: 34.3 KiB, free: 434.4 MiB)
-24/11/01 14:04:24 INFO SparkContext: Created broadcast 0 from csv at NativeMethodAccessorImpl.java:0
-24/11/01 14:04:24 INFO FileSourceScanExec: Planning scan with bin packing, max size: 134217728 bytes, open cost is considered as scanning 4194304 bytes.
-24/11/01 14:04:24 INFO SparkContext: Starting job: csv at NativeMethodAccessorImpl.java:0
-24/11/01 14:04:24 INFO DAGScheduler: Got job 0 (csv at NativeMethodAccessorImpl.java:0) with 1 output partitions
-24/11/01 14:04:24 INFO DAGScheduler: Final stage: ResultStage 0 (csv at NativeMethodAccessorImpl.java:0)
-24/11/01 14:04:24 INFO DAGScheduler: Parents of final stage: List()
-24/11/01 14:04:24 INFO DAGScheduler: Missing parents: List()
-24/11/01 14:04:24 INFO DAGScheduler: Submitting ResultStage 0 (CoalescedRDD[3] at csv at NativeMethodAccessorImpl.java:0), which has no missing parents
-24/11/01 14:04:24 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 216.7 KiB, free 434.0 MiB)
-24/11/01 14:04:24 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 77.9 KiB, free 433.9 MiB)
-24/11/01 14:04:24 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on midway3-0026.rcc.local:46129 (size: 77.9 KiB, free: 434.3 MiB)
-24/11/01 14:04:24 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1513
-24/11/01 14:04:24 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (CoalescedRDD[3] at csv at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
-24/11/01 14:04:24 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
-24/11/01 14:04:24 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (midway3-0026.rcc.local, executor driver, partition 0, PROCESS_LOCAL, 8464 bytes) taskResourceAssignments Map()
-24/11/01 14:04:24 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
-24/11/01 14:04:24 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
-24/11/01 14:04:24 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
-24/11/01 14:04:24 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
-24/11/01 14:04:24 INFO FileScanRDD: Reading File path: file:///home/asarria/ideology/data/session_texts.csv, range: 0-134217728, partition values: [empty row]
-24/11/01 14:04:24 INFO CodeGenerator: Code generated in 8.909916 ms
-24/11/01 14:04:24 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+24/11/05 11:28:07 INFO FileSourceStrategy: Pushed Filters: 
+24/11/05 11:28:07 INFO FileSourceStrategy: Post-Scan Filters: (size(split(interventions#2, ,, -1), true) > 0),isnotnull(split(interventions#2, ,, -1))
+24/11/05 11:28:07 INFO FileSourceStrategy: Output Data Schema: struct<session: string, interventions: string>
+24/11/05 11:28:07 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+24/11/05 11:28:07 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+24/11/05 11:28:07 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+24/11/05 11:28:07 INFO CodeGenerator: Code generated in 135.357565 ms
+24/11/05 11:28:07 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 199.9 KiB, free 434.2 MiB)
+24/11/05 11:28:07 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 34.3 KiB, free 434.2 MiB)
+24/11/05 11:28:07 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on midway3-0212.rcc.local:34115 (size: 34.3 KiB, free: 434.4 MiB)
+24/11/05 11:28:07 INFO SparkContext: Created broadcast 0 from csv at NativeMethodAccessorImpl.java:0
+24/11/05 11:28:07 INFO FileSourceScanExec: Planning scan with bin packing, max size: 134217728 bytes, open cost is considered as scanning 4194304 bytes.
+24/11/05 11:28:07 INFO SparkContext: Starting job: csv at NativeMethodAccessorImpl.java:0
+24/11/05 11:28:07 INFO DAGScheduler: Got job 0 (csv at NativeMethodAccessorImpl.java:0) with 47 output partitions
+24/11/05 11:28:07 INFO DAGScheduler: Final stage: ResultStage 0 (csv at NativeMethodAccessorImpl.java:0)
+24/11/05 11:28:07 INFO DAGScheduler: Parents of final stage: List()
+24/11/05 11:28:07 INFO DAGScheduler: Missing parents: List()
+24/11/05 11:28:07 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[2] at csv at NativeMethodAccessorImpl.java:0), which has no missing parents
+24/11/05 11:28:07 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 216.7 KiB, free 434.0 MiB)
+24/11/05 11:28:07 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 77.9 KiB, free 433.9 MiB)
+24/11/05 11:28:07 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on midway3-0212.rcc.local:34115 (size: 77.9 KiB, free: 434.3 MiB)
+24/11/05 11:28:07 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1513
+24/11/05 11:28:07 INFO DAGScheduler: Submitting 47 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at csv at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+24/11/05 11:28:07 INFO TaskSchedulerImpl: Adding task set 0.0 with 47 tasks resource profile 0
+24/11/05 11:28:07 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (midway3-0212.rcc.local, executor driver, partition 0, PROCESS_LOCAL, 4923 bytes) taskResourceAssignments Map()
+24/11/05 11:28:07 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1) (midway3-0212.rcc.local, executor driver, partition 1, PROCESS_LOCAL, 4923 bytes) taskResourceAssignments Map()
+24/11/05 11:28:07 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2) (midway3-0212.rcc.local, executor driver, partition 2, PROCESS_LOCAL, 4923 bytes) taskResourceAssignments Map()
+24/11/05 11:28:07 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3) (midway3-0212.rcc.local, executor driver, partition 3, PROCESS_LOCAL, 4923 bytes) taskResourceAssignments Map()
+24/11/05 11:28:07 INFO TaskSetManager: Starting task 4.0 in stage 0.0 (TID 4) (midway3-0212.rcc.local, executor driver, partition 4, PROCESS_LOCAL, 4923 bytes) taskResourceAssignments Map()
+24/11/05 11:28:07 INFO TaskSetManager: Starting task 5.0 in stage 0.0 (TID 5) (midway3-0212.rcc.local, executor driver, partition 5, PROCESS_LOCAL, 4923 bytes) taskResourceAssignments Map()
+24/11/05 11:28:07 INFO TaskSetManager: Starting task 6.0 in stage 0.0 (TID 6) (midway3-0212.rcc.local, executor driver, partition 6, PROCESS_LOCAL, 4923 bytes) taskResourceAssignments Map()
+24/11/05 11:28:07 INFO TaskSetManager: Starting task 7.0 in stage 0.0 (TID 7) (midway3-0212.rcc.local, executor driver, partition 7, PROCESS_LOCAL, 4923 bytes) taskResourceAssignments Map()
+24/11/05 11:28:07 INFO TaskSetManager: Starting task 8.0 in stage 0.0 (TID 8) (midway3-0212.rcc.local, executor driver, partition 8, PROCESS_LOCAL, 4923 bytes) taskResourceAssignments Map()
+24/11/05 11:28:07 INFO TaskSetManager: Starting task 9.0 in stage 0.0 (TID 9) (midway3-0212.rcc.local, executor driver, partition 9, PROCESS_LOCAL, 4923 bytes) taskResourceAssignments Map()
+24/11/05 11:28:07 INFO Executor: Running task 4.0 in stage 0.0 (TID 4)
+24/11/05 11:28:07 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+24/11/05 11:28:07 INFO Executor: Running task 7.0 in stage 0.0 (TID 7)
+24/11/05 11:28:07 INFO Executor: Running task 5.0 in stage 0.0 (TID 5)
+24/11/05 11:28:07 INFO Executor: Running task 8.0 in stage 0.0 (TID 8)
+24/11/05 11:28:07 INFO Executor: Running task 6.0 in stage 0.0 (TID 6)
+24/11/05 11:28:07 INFO Executor: Running task 9.0 in stage 0.0 (TID 9)
+24/11/05 11:28:07 INFO Executor: Running task 2.0 in stage 0.0 (TID 2)
+24/11/05 11:28:07 INFO Executor: Running task 3.0 in stage 0.0 (TID 3)
+24/11/05 11:28:07 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+24/11/05 11:28:08 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+24/11/05 11:28:08 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+24/11/05 11:28:08 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+24/11/05 11:28:08 INFO FileScanRDD: Reading File path: file:///home/asarria/ideology/data/session_texts.csv, range: 536870912-671088640, partition values: [empty row]
+24/11/05 11:28:08 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+24/11/05 11:28:08 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+24/11/05 11:28:08 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+24/11/05 11:28:08 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+24/11/05 11:28:08 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+24/11/05 11:28:08 INFO FileScanRDD: Reading File path: file:///home/asarria/ideology/data/session_texts.csv, range: 134217728-268435456, partition values: [empty row]
+24/11/05 11:28:08 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+24/11/05 11:28:08 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+24/11/05 11:28:08 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+24/11/05 11:28:08 INFO FileScanRDD: Reading File path: file:///home/asarria/ideology/data/session_texts.csv, range: 805306368-939524096, partition values: [empty row]
+24/11/05 11:28:08 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+24/11/05 11:28:08 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+24/11/05 11:28:08 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+24/11/05 11:28:08 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+24/11/05 11:28:08 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+24/11/05 11:28:08 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+24/11/05 11:28:08 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+24/11/05 11:28:08 INFO FileScanRDD: Reading File path: file:///home/asarria/ideology/data/session_texts.csv, range: 1207959552-1342177280, partition values: [empty row]
+24/11/05 11:28:08 INFO FileScanRDD: Reading File path: file:///home/asarria/ideology/data/session_texts.csv, range: 671088640-805306368, partition values: [empty row]
+24/11/05 11:28:08 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+24/11/05 11:28:08 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+24/11/05 11:28:08 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+24/11/05 11:28:08 INFO FileScanRDD: Reading File path: file:///home/asarria/ideology/data/session_texts.csv, range: 939524096-1073741824, partition values: [empty row]
+24/11/05 11:28:08 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+24/11/05 11:28:08 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+24/11/05 11:28:08 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+24/11/05 11:28:08 INFO FileScanRDD: Reading File path: file:///home/asarria/ideology/data/session_texts.csv, range: 268435456-402653184, partition values: [empty row]
+24/11/05 11:28:08 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+24/11/05 11:28:08 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+24/11/05 11:28:08 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+24/11/05 11:28:08 INFO FileScanRDD: Reading File path: file:///home/asarria/ideology/data/session_texts.csv, range: 1073741824-1207959552, partition values: [empty row]
+24/11/05 11:28:08 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+24/11/05 11:28:08 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+24/11/05 11:28:08 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+24/11/05 11:28:08 INFO FileScanRDD: Reading File path: file:///home/asarria/ideology/data/session_texts.csv, range: 402653184-536870912, partition values: [empty row]
+24/11/05 11:28:08 INFO CodeGenerator: Code generated in 21.544102 ms
+24/11/05 11:28:08 INFO FileScanRDD: Reading File path: file:///home/asarria/ideology/data/session_texts.csv, range: 0-134217728, partition values: [empty row]
+24/11/05 11:28:08 WARN CSVHeaderChecker: CSV header does not conform to the schema.
  Header: , date
  Schema: session, interventions
 Expected: session but found: 
 CSV file: file:///home/asarria/ideology/data/session_texts.csv
-24/11/01 14:04:26 ERROR Utils: Aborting task
+24/11/05 11:28:09 ERROR Utils: Aborting task
 com.univocity.parsers.common.TextParsingException: java.lang.ArrayIndexOutOfBoundsException - Index 20480 out of bounds for length 20480
 Parser Configuration: CsvParserSettings:
 	Auto configuration enabled=true
@@ -120,7 +174,7 @@ Parser Configuration: CsvParserSettings:
 		Quote character="
 		Quote escape character=\
 		Quote escape escape character=null
-Internal state when error was thrown: line=885672, column=20481, record=885672, charIndex=110856941, headers=[, id, date, chamber, type, raw_text, clean_text, intervention_pairs, interventions]
+Internal state when error was thrown: line=353782, column=20481, record=353782, charIndex=37172217, headers=[1610, gaceta_501 (7), 2012-07-25, house, commitee, G ACETA   DEL  C ONGRESO    501   ]
 	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
 	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
@@ -135,7 +189,6 @@ Internal state when error was thrown: line=885672, column=20481, record=885672, 
 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
 	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
 	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
-	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)
 	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
 	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
@@ -154,9 +207,81 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 20480 out of bounds f
 	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:202)
 	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:687)
-	... 26 more
-24/11/01 14:04:26 ERROR FileFormatWriter: Job job_202411011404247997766537560883939_0000 aborted.
-24/11/01 14:04:26 ERROR Executor: Exception in task 0.0 in stage 0.0 (TID 0)
+	... 25 more
+24/11/05 11:28:09 ERROR FileFormatWriter: Job job_202411051128075953771368317207536_0000 aborted.
+24/11/05 11:28:09 ERROR Utils: Aborting task
+com.univocity.parsers.common.TextParsingException: java.lang.ArrayIndexOutOfBoundsException - null
+Parser Configuration: CsvParserSettings:
+	Auto configuration enabled=true
+	Auto-closing enabled=true
+	Autodetect column delimiter=false
+	Autodetect quotes=false
+	Column reordering enabled=true
+	Delimiters for detection=null
+	Empty value=
+	Escape unquoted values=false
+	Header extraction enabled=null
+	Headers=null
+	Ignore leading whitespaces=false
+	Ignore leading whitespaces in quotes=false
+	Ignore trailing whitespaces=false
+	Ignore trailing whitespaces in quotes=false
+	Input buffer size=1048576
+	Input reading on separate thread=false
+	Keep escape sequences=false
+	Keep quotes=false
+	Length of content displayed on error=1000
+	Line separator detection enabled=false
+	Maximum number of characters per column=-1
+	Maximum number of columns=20480
+	Normalize escaped line separators=true
+	Null value=
+	Number of records to read=all
+	Processor=none
+	Restricting data in exceptions=false
+	RowProcessor error handler=null
+	Selected fields=field selection: [0, 2]
+	Skip bits as whitespace=true
+	Skip empty lines=true
+	Unescaped quote handling=STOP_AT_DELIMITERFormat configuration:
+	CsvFormat:
+		Comment character=#
+		Field delimiter=,
+		Line separator (normalized)=\n
+		Line separator sequence=\n
+		Quote character="
+		Quote escape character=\
+		Quote escape escape character=null
+Internal state when error was thrown: line=284780, column=20481, record=284780, charIndex=32380403, headers=[175, gaceta_423 (1), 2015-04-14, senate, commitee, ACTAS DE COMISIÓN ]
+	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
+	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser$.$anonfun$parseIterator$1(UnivocityParser.scala:417)
+	at org.apache.spark.sql.catalyst.util.FailureSafeParser.parse(FailureSafeParser.scala:60)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser$.$anonfun$parseIterator$2(UnivocityParser.scala:421)
+	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:486)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:492)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:116)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+24/11/05 11:28:09 ERROR Executor: Exception in task 9.0 in stage 0.0 (TID 9)
 org.apache.spark.SparkException: Task failed while writing rows.
 	at org.apache.spark.sql.errors.QueryExecutionErrors$.taskFailedWhileWritingRowsError(QueryExecutionErrors.scala:655)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:358)
@@ -211,7 +336,7 @@ Parser Configuration: CsvParserSettings:
 		Quote character="
 		Quote escape character=\
 		Quote escape escape character=null
-Internal state when error was thrown: line=885672, column=20481, record=885672, charIndex=110856941, headers=[, id, date, chamber, type, raw_text, clean_text, intervention_pairs, interventions]
+Internal state when error was thrown: line=353782, column=20481, record=353782, charIndex=37172217, headers=[1610, gaceta_501 (7), 2012-07-25, house, commitee, G ACETA   DEL  C ONGRESO    501   ]
 	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
 	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
@@ -226,7 +351,6 @@ Internal state when error was thrown: line=885672, column=20481, record=885672, 
 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
 	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
 	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
-	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)
 	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
 	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
@@ -237,8 +361,238 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 20480 out of bounds f
 	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:202)
 	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:687)
-	... 26 more
-24/11/01 14:04:26 WARN TaskSetManager: Lost task 0.0 in stage 0.0 (TID 0) (midway3-0026.rcc.local executor driver): org.apache.spark.SparkException: Task failed while writing rows.
+	... 25 more
+24/11/05 11:28:09 ERROR FileFormatWriter: Job job_202411051128075953771368317207536_0000 aborted.
+24/11/05 11:28:09 ERROR Executor: Exception in task 1.0 in stage 0.0 (TID 1)
+org.apache.spark.SparkException: Task failed while writing rows.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.taskFailedWhileWritingRowsError(QueryExecutionErrors.scala:655)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:358)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: com.univocity.parsers.common.TextParsingException: java.lang.ArrayIndexOutOfBoundsException - null
+Parser Configuration: CsvParserSettings:
+	Auto configuration enabled=true
+	Auto-closing enabled=true
+	Autodetect column delimiter=false
+	Autodetect quotes=false
+	Column reordering enabled=true
+	Delimiters for detection=null
+	Empty value=
+	Escape unquoted values=false
+	Header extraction enabled=null
+	Headers=null
+	Ignore leading whitespaces=false
+	Ignore leading whitespaces in quotes=false
+	Ignore trailing whitespaces=false
+	Ignore trailing whitespaces in quotes=false
+	Input buffer size=1048576
+	Input reading on separate thread=false
+	Keep escape sequences=false
+	Keep quotes=false
+	Length of content displayed on error=1000
+	Line separator detection enabled=false
+	Maximum number of characters per column=-1
+	Maximum number of columns=20480
+	Normalize escaped line separators=true
+	Null value=
+	Number of records to read=all
+	Processor=none
+	Restricting data in exceptions=false
+	RowProcessor error handler=null
+	Selected fields=field selection: [0, 2]
+	Skip bits as whitespace=true
+	Skip empty lines=true
+	Unescaped quote handling=STOP_AT_DELIMITERFormat configuration:
+	CsvFormat:
+		Comment character=#
+		Field delimiter=,
+		Line separator (normalized)=\n
+		Line separator sequence=\n
+		Quote character="
+		Quote escape character=\
+		Quote escape escape character=null
+Internal state when error was thrown: line=284780, column=20481, record=284780, charIndex=32380403, headers=[175, gaceta_423 (1), 2015-04-14, senate, commitee, ACTAS DE COMISIÓN ]
+	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
+	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser$.$anonfun$parseIterator$1(UnivocityParser.scala:417)
+	at org.apache.spark.sql.catalyst.util.FailureSafeParser.parse(FailureSafeParser.scala:60)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser$.$anonfun$parseIterator$2(UnivocityParser.scala:421)
+	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:486)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:492)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:116)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	... 9 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+24/11/05 11:28:09 ERROR Utils: Aborting task
+com.univocity.parsers.common.TextParsingException: java.lang.ArrayIndexOutOfBoundsException - null
+Parser Configuration: CsvParserSettings:
+	Auto configuration enabled=true
+	Auto-closing enabled=true
+	Autodetect column delimiter=false
+	Autodetect quotes=false
+	Column reordering enabled=true
+	Delimiters for detection=null
+	Empty value=
+	Escape unquoted values=false
+	Header extraction enabled=null
+	Headers=null
+	Ignore leading whitespaces=false
+	Ignore leading whitespaces in quotes=false
+	Ignore trailing whitespaces=false
+	Ignore trailing whitespaces in quotes=false
+	Input buffer size=1048576
+	Input reading on separate thread=false
+	Keep escape sequences=false
+	Keep quotes=false
+	Length of content displayed on error=1000
+	Line separator detection enabled=false
+	Maximum number of characters per column=-1
+	Maximum number of columns=20480
+	Normalize escaped line separators=true
+	Null value=
+	Number of records to read=all
+	Processor=none
+	Restricting data in exceptions=false
+	RowProcessor error handler=null
+	Selected fields=field selection: [0, 2]
+	Skip bits as whitespace=true
+	Skip empty lines=true
+	Unescaped quote handling=STOP_AT_DELIMITERFormat configuration:
+	CsvFormat:
+		Comment character=#
+		Field delimiter=,
+		Line separator (normalized)=\n
+		Line separator sequence=\n
+		Quote character="
+		Quote escape character=\
+		Quote escape escape character=null
+Internal state when error was thrown: line=295189, column=20481, record=295189, charIndex=39000753, headers=[política,  porque sus deseos lo vieron troncados  ]
+	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
+	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser$.$anonfun$parseIterator$1(UnivocityParser.scala:417)
+	at org.apache.spark.sql.catalyst.util.FailureSafeParser.parse(FailureSafeParser.scala:60)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser$.$anonfun$parseIterator$2(UnivocityParser.scala:421)
+	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:486)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:492)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:116)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+24/11/05 11:28:09 ERROR FileFormatWriter: Job job_202411051128075953771368317207536_0000 aborted.
+24/11/05 11:28:09 ERROR Executor: Exception in task 5.0 in stage 0.0 (TID 5)
+org.apache.spark.SparkException: Task failed while writing rows.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.taskFailedWhileWritingRowsError(QueryExecutionErrors.scala:655)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:358)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: com.univocity.parsers.common.TextParsingException: java.lang.ArrayIndexOutOfBoundsException - null
+Parser Configuration: CsvParserSettings:
+	Auto configuration enabled=true
+	Auto-closing enabled=true
+	Autodetect column delimiter=false
+	Autodetect quotes=false
+	Column reordering enabled=true
+	Delimiters for detection=null
+	Empty value=
+	Escape unquoted values=false
+	Header extraction enabled=null
+	Headers=null
+	Ignore leading whitespaces=false
+	Ignore leading whitespaces in quotes=false
+	Ignore trailing whitespaces=false
+	Ignore trailing whitespaces in quotes=false
+	Input buffer size=1048576
+	Input reading on separate thread=false
+	Keep escape sequences=false
+	Keep quotes=false
+	Length of content displayed on error=1000
+	Line separator detection enabled=false
+	Maximum number of characters per column=-1
+	Maximum number of columns=20480
+	Normalize escaped line separators=true
+	Null value=
+	Number of records to read=all
+	Processor=none
+	Restricting data in exceptions=false
+	RowProcessor error handler=null
+	Selected fields=field selection: [0, 2]
+	Skip bits as whitespace=true
+	Skip empty lines=true
+	Unescaped quote handling=STOP_AT_DELIMITERFormat configuration:
+	CsvFormat:
+		Comment character=#
+		Field delimiter=,
+		Line separator (normalized)=\n
+		Line separator sequence=\n
+		Quote character="
+		Quote escape character=\
+		Quote escape escape character=null
+Internal state when error was thrown: line=295189, column=20481, record=295189, charIndex=39000753, headers=[política,  porque sus deseos lo vieron troncados  ]
+	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
+	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser$.$anonfun$parseIterator$1(UnivocityParser.scala:417)
+	at org.apache.spark.sql.catalyst.util.FailureSafeParser.parse(FailureSafeParser.scala:60)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser$.$anonfun$parseIterator$2(UnivocityParser.scala:421)
+	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:486)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:492)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:116)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	... 9 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+24/11/05 11:28:09 INFO TaskSetManager: Starting task 10.0 in stage 0.0 (TID 10) (midway3-0212.rcc.local, executor driver, partition 10, PROCESS_LOCAL, 4923 bytes) taskResourceAssignments Map()
+24/11/05 11:28:09 INFO Executor: Running task 10.0 in stage 0.0 (TID 10)
+24/11/05 11:28:09 INFO TaskSetManager: Starting task 11.0 in stage 0.0 (TID 11) (midway3-0212.rcc.local, executor driver, partition 11, PROCESS_LOCAL, 4923 bytes) taskResourceAssignments Map()
+24/11/05 11:28:09 INFO Executor: Running task 11.0 in stage 0.0 (TID 11)
+24/11/05 11:28:09 WARN TaskSetManager: Lost task 9.0 in stage 0.0 (TID 9) (midway3-0212.rcc.local executor driver): org.apache.spark.SparkException: Task failed while writing rows.
 	at org.apache.spark.sql.errors.QueryExecutionErrors$.taskFailedWhileWritingRowsError(QueryExecutionErrors.scala:655)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:358)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
@@ -292,7 +646,7 @@ Parser Configuration: CsvParserSettings:
 		Quote character="
 		Quote escape character=\
 		Quote escape escape character=null
-Internal state when error was thrown: line=885672, column=20481, record=885672, charIndex=110856941, headers=[, id, date, chamber, type, raw_text, clean_text, intervention_pairs, interventions]
+Internal state when error was thrown: line=353782, column=20481, record=353782, charIndex=37172217, headers=[1610, gaceta_501 (7), 2012-07-25, house, commitee, G ACETA   DEL  C ONGRESO    501   ]
 	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
 	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
@@ -307,7 +661,6 @@ Internal state when error was thrown: line=885672, column=20481, record=885672, 
 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
 	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
 	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
-	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)
 	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
 	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
@@ -318,13 +671,180 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 20480 out of bounds f
 	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:202)
 	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:687)
-	... 26 more
+	... 25 more
 
-24/11/01 14:04:26 ERROR TaskSetManager: Task 0 in stage 0.0 failed 1 times; aborting job
-24/11/01 14:04:26 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
-24/11/01 14:04:26 INFO TaskSchedulerImpl: Cancelling stage 0
-24/11/01 14:04:26 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage cancelled
-24/11/01 14:04:26 INFO DAGScheduler: ResultStage 0 (csv at NativeMethodAccessorImpl.java:0) failed in 2.434 s due to Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (midway3-0026.rcc.local executor driver): org.apache.spark.SparkException: Task failed while writing rows.
+24/11/05 11:28:09 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+24/11/05 11:28:09 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+24/11/05 11:28:09 ERROR TaskSetManager: Task 9 in stage 0.0 failed 1 times; aborting job
+24/11/05 11:28:09 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+24/11/05 11:28:09 INFO FileScanRDD: Reading File path: file:///home/asarria/ideology/data/session_texts.csv, range: 1476395008-1610612736, partition values: [empty row]
+24/11/05 11:28:09 INFO TaskSetManager: Lost task 1.0 in stage 0.0 (TID 1) on midway3-0212.rcc.local, executor driver: org.apache.spark.SparkException (Task failed while writing rows.) [duplicate 1]
+24/11/05 11:28:09 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+24/11/05 11:28:09 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+24/11/05 11:28:09 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+24/11/05 11:28:09 INFO FileScanRDD: Reading File path: file:///home/asarria/ideology/data/session_texts.csv, range: 1342177280-1476395008, partition values: [empty row]
+24/11/05 11:28:09 INFO TaskSchedulerImpl: Cancelling stage 0
+24/11/05 11:28:09 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage cancelled
+24/11/05 11:28:09 INFO Executor: Executor is trying to kill task 0.0 in stage 0.0 (TID 0), reason: Stage cancelled
+24/11/05 11:28:09 INFO Executor: Executor is trying to kill task 2.0 in stage 0.0 (TID 2), reason: Stage cancelled
+24/11/05 11:28:09 INFO Executor: Executor is trying to kill task 6.0 in stage 0.0 (TID 6), reason: Stage cancelled
+24/11/05 11:28:09 INFO Executor: Executor is trying to kill task 3.0 in stage 0.0 (TID 3), reason: Stage cancelled
+24/11/05 11:28:09 ERROR Utils: Aborting task
+org.apache.spark.TaskKilledException
+	at org.apache.spark.TaskContextImpl.killTaskIfInterrupted(TaskContextImpl.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:115)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+24/11/05 11:28:09 INFO Executor: Executor is trying to kill task 10.0 in stage 0.0 (TID 10), reason: Stage cancelled
+24/11/05 11:28:09 ERROR Utils: Aborting task
+org.apache.spark.TaskKilledException
+	at org.apache.spark.TaskContextImpl.killTaskIfInterrupted(TaskContextImpl.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:115)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+24/11/05 11:28:09 INFO Executor: Executor is trying to kill task 7.0 in stage 0.0 (TID 7), reason: Stage cancelled
+24/11/05 11:28:09 INFO Executor: Executor is trying to kill task 4.0 in stage 0.0 (TID 4), reason: Stage cancelled
+24/11/05 11:28:09 INFO Executor: Executor is trying to kill task 11.0 in stage 0.0 (TID 11), reason: Stage cancelled
+24/11/05 11:28:09 ERROR Utils: Aborting task
+org.apache.spark.TaskKilledException
+	at org.apache.spark.TaskContextImpl.killTaskIfInterrupted(TaskContextImpl.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:115)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+24/11/05 11:28:09 INFO Executor: Executor is trying to kill task 8.0 in stage 0.0 (TID 8), reason: Stage cancelled
+24/11/05 11:28:09 ERROR Utils: Aborting task
+org.apache.spark.TaskKilledException
+	at org.apache.spark.TaskContextImpl.killTaskIfInterrupted(TaskContextImpl.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:115)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+24/11/05 11:28:09 ERROR Utils: Aborting task
+org.apache.spark.TaskKilledException
+	at org.apache.spark.TaskContextImpl.killTaskIfInterrupted(TaskContextImpl.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:115)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+24/11/05 11:28:09 INFO TaskSchedulerImpl: Stage 0 was cancelled
+24/11/05 11:28:09 ERROR Utils: Aborting task
+org.apache.spark.TaskKilledException
+	at org.apache.spark.TaskContextImpl.killTaskIfInterrupted(TaskContextImpl.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:115)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+24/11/05 11:28:09 ERROR FileFormatWriter: Job job_202411051128075953771368317207536_0000 aborted.
+24/11/05 11:28:09 ERROR Utils: Aborting task
+org.apache.spark.TaskKilledException
+	at org.apache.spark.TaskContextImpl.killTaskIfInterrupted(TaskContextImpl.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:115)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+24/11/05 11:28:09 INFO TaskSetManager: Lost task 5.0 in stage 0.0 (TID 5) on midway3-0212.rcc.local, executor driver: org.apache.spark.SparkException (Task failed while writing rows.) [duplicate 2]
+24/11/05 11:28:09 INFO DAGScheduler: ResultStage 0 (csv at NativeMethodAccessorImpl.java:0) failed in 1.787 s due to Job aborted due to stage failure: Task 9 in stage 0.0 failed 1 times, most recent failure: Lost task 9.0 in stage 0.0 (TID 9) (midway3-0212.rcc.local executor driver): org.apache.spark.SparkException: Task failed while writing rows.
 	at org.apache.spark.sql.errors.QueryExecutionErrors$.taskFailedWhileWritingRowsError(QueryExecutionErrors.scala:655)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:358)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
@@ -378,7 +898,7 @@ Parser Configuration: CsvParserSettings:
 		Quote character="
 		Quote escape character=\
 		Quote escape escape character=null
-Internal state when error was thrown: line=885672, column=20481, record=885672, charIndex=110856941, headers=[, id, date, chamber, type, raw_text, clean_text, intervention_pairs, interventions]
+Internal state when error was thrown: line=353782, column=20481, record=353782, charIndex=37172217, headers=[1610, gaceta_501 (7), 2012-07-25, house, commitee, G ACETA   DEL  C ONGRESO    501   ]
 	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
 	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
@@ -393,7 +913,6 @@ Internal state when error was thrown: line=885672, column=20481, record=885672, 
 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
 	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
 	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
-	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)
 	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
 	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
@@ -404,12 +923,18 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 20480 out of bounds f
 	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:202)
 	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:687)
-	... 26 more
+	... 25 more
 
 Driver stacktrace:
-24/11/01 14:04:26 INFO DAGScheduler: Job 0 failed: csv at NativeMethodAccessorImpl.java:0, took 2.458640 s
-24/11/01 14:04:26 ERROR FileFormatWriter: Aborting job 53942a76-6fb3-4e67-9dbd-567cc6685347.
-org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (midway3-0026.rcc.local executor driver): org.apache.spark.SparkException: Task failed while writing rows.
+24/11/05 11:28:09 ERROR FileFormatWriter: Job job_202411051128075953771368317207536_0000 aborted.
+24/11/05 11:28:09 ERROR FileFormatWriter: Job job_202411051128075953771368317207536_0000 aborted.
+24/11/05 11:28:09 ERROR FileFormatWriter: Job job_202411051128075953771368317207536_0000 aborted.
+24/11/05 11:28:09 ERROR FileFormatWriter: Job job_202411051128075953771368317207536_0000 aborted.
+24/11/05 11:28:09 ERROR FileFormatWriter: Job job_202411051128075953771368317207536_0000 aborted.
+24/11/05 11:28:09 ERROR FileFormatWriter: Job job_202411051128075953771368317207536_0000 aborted.
+24/11/05 11:28:09 INFO DAGScheduler: Job 0 failed: csv at NativeMethodAccessorImpl.java:0, took 1.816822 s
+24/11/05 11:28:09 ERROR FileFormatWriter: Aborting job eb4b673e-a0d1-46ba-ac4a-515c0433466e.
+org.apache.spark.SparkException: Job aborted due to stage failure: Task 9 in stage 0.0 failed 1 times, most recent failure: Lost task 9.0 in stage 0.0 (TID 9) (midway3-0212.rcc.local executor driver): org.apache.spark.SparkException: Task failed while writing rows.
 	at org.apache.spark.sql.errors.QueryExecutionErrors$.taskFailedWhileWritingRowsError(QueryExecutionErrors.scala:655)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:358)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
@@ -463,7 +988,7 @@ Parser Configuration: CsvParserSettings:
 		Quote character="
 		Quote escape character=\
 		Quote escape escape character=null
-Internal state when error was thrown: line=885672, column=20481, record=885672, charIndex=110856941, headers=[, id, date, chamber, type, raw_text, clean_text, intervention_pairs, interventions]
+Internal state when error was thrown: line=353782, column=20481, record=353782, charIndex=37172217, headers=[1610, gaceta_501 (7), 2012-07-25, house, commitee, G ACETA   DEL  C ONGRESO    501   ]
 	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
 	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
@@ -478,7 +1003,6 @@ Internal state when error was thrown: line=885672, column=20481, record=885672, 
 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
 	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
 	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
-	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)
 	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
 	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
@@ -489,7 +1013,7 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 20480 out of bounds f
 	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:202)
 	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:687)
-	... 26 more
+	... 25 more
 
 Driver stacktrace:
 	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2672)
@@ -606,7 +1130,7 @@ Parser Configuration: CsvParserSettings:
 		Quote character="
 		Quote escape character=\
 		Quote escape escape character=null
-Internal state when error was thrown: line=885672, column=20481, record=885672, charIndex=110856941, headers=[, id, date, chamber, type, raw_text, clean_text, intervention_pairs, interventions]
+Internal state when error was thrown: line=353782, column=20481, record=353782, charIndex=37172217, headers=[1610, gaceta_501 (7), 2012-07-25, house, commitee, G ACETA   DEL  C ONGRESO    501   ]
 	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
 	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
@@ -621,7 +1145,6 @@ Internal state when error was thrown: line=885672, column=20481, record=885672, 
 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
 	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
 	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
-	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)
 	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
 	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
@@ -632,10 +1155,29 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 20480 out of bounds f
 	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:202)
 	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:687)
-	... 26 more
+	... 25 more
+24/11/05 11:28:09 INFO Executor: Executor interrupted and killed task 11.0 in stage 0.0 (TID 11), reason: Stage cancelled
+24/11/05 11:28:09 WARN TaskSetManager: Lost task 11.0 in stage 0.0 (TID 11) (midway3-0212.rcc.local executor driver): TaskKilled (Stage cancelled)
+24/11/05 11:28:09 INFO Executor: Executor interrupted and killed task 4.0 in stage 0.0 (TID 4), reason: Stage cancelled
+24/11/05 11:28:09 WARN TaskSetManager: Lost task 4.0 in stage 0.0 (TID 4) (midway3-0212.rcc.local executor driver): TaskKilled (Stage cancelled)
+24/11/05 11:28:09 INFO Executor: Executor interrupted and killed task 3.0 in stage 0.0 (TID 3), reason: Stage cancelled
+24/11/05 11:28:09 WARN TaskSetManager: Lost task 3.0 in stage 0.0 (TID 3) (midway3-0212.rcc.local executor driver): TaskKilled (Stage cancelled)
+24/11/05 11:28:09 INFO Executor: Executor interrupted and killed task 2.0 in stage 0.0 (TID 2), reason: Stage cancelled
+24/11/05 11:28:09 WARN TaskSetManager: Lost task 2.0 in stage 0.0 (TID 2) (midway3-0212.rcc.local executor driver): TaskKilled (Stage cancelled)
+24/11/05 11:28:09 INFO Executor: Executor interrupted and killed task 0.0 in stage 0.0 (TID 0), reason: Stage cancelled
+24/11/05 11:28:09 WARN TaskSetManager: Lost task 0.0 in stage 0.0 (TID 0) (midway3-0212.rcc.local executor driver): TaskKilled (Stage cancelled)
+24/11/05 11:28:09 INFO Executor: Executor interrupted and killed task 8.0 in stage 0.0 (TID 8), reason: Stage cancelled
+24/11/05 11:28:09 WARN TaskSetManager: Lost task 8.0 in stage 0.0 (TID 8) (midway3-0212.rcc.local executor driver): TaskKilled (Stage cancelled)
+24/11/05 11:28:09 INFO Executor: Executor interrupted and killed task 10.0 in stage 0.0 (TID 10), reason: Stage cancelled
+24/11/05 11:28:09 INFO Executor: Executor interrupted and killed task 6.0 in stage 0.0 (TID 6), reason: Stage cancelled
+24/11/05 11:28:09 WARN TaskSetManager: Lost task 10.0 in stage 0.0 (TID 10) (midway3-0212.rcc.local executor driver): TaskKilled (Stage cancelled)
+24/11/05 11:28:09 WARN TaskSetManager: Lost task 6.0 in stage 0.0 (TID 6) (midway3-0212.rcc.local executor driver): TaskKilled (Stage cancelled)
+24/11/05 11:28:09 INFO Executor: Executor interrupted and killed task 7.0 in stage 0.0 (TID 7), reason: Stage cancelled
+24/11/05 11:28:09 WARN TaskSetManager: Lost task 7.0 in stage 0.0 (TID 7) (midway3-0212.rcc.local executor driver): TaskKilled (Stage cancelled)
+24/11/05 11:28:09 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
 Traceback (most recent call last):
   File "/home/asarria/ideology/create_intervention_df.py", line 42, in <module>
-    intervention_df.coalesce(1).write.csv(r"data/interventions.csv", header=True)
+    intervention_df.write.csv(r"data/interventions", header=True, mode="overwrite")
   File "/software/spark-3.3.2-el8-x86_64/python/lib/pyspark.zip/pyspark/sql/readwriter.py", line 1240, in csv
   File "/software/spark-3.3.2-el8-x86_64/python/lib/py4j-0.10.9.5-src.zip/py4j/java_gateway.py", line 1321, in __call__
   File "/software/spark-3.3.2-el8-x86_64/python/lib/pyspark.zip/pyspark/sql/utils.py", line 190, in deco
@@ -686,7 +1228,7 @@ py4j.protocol.Py4JJavaError: An error occurred while calling o54.csv.
 	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
 	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (midway3-0026.rcc.local executor driver): org.apache.spark.SparkException: Task failed while writing rows.
+Caused by: org.apache.spark.SparkException: Job aborted due to stage failure: Task 9 in stage 0.0 failed 1 times, most recent failure: Lost task 9.0 in stage 0.0 (TID 9) (midway3-0212.rcc.local executor driver): org.apache.spark.SparkException: Task failed while writing rows.
 	at org.apache.spark.sql.errors.QueryExecutionErrors$.taskFailedWhileWritingRowsError(QueryExecutionErrors.scala:655)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:358)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
@@ -740,7 +1282,7 @@ Parser Configuration: CsvParserSettings:
 		Quote character="
 		Quote escape character=\
 		Quote escape escape character=null
-Internal state when error was thrown: line=885672, column=20481, record=885672, charIndex=110856941, headers=[, id, date, chamber, type, raw_text, clean_text, intervention_pairs, interventions]
+Internal state when error was thrown: line=353782, column=20481, record=353782, charIndex=37172217, headers=[1610, gaceta_501 (7), 2012-07-25, house, commitee, G ACETA   DEL  C ONGRESO    501   ]
 	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
 	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
@@ -755,7 +1297,6 @@ Internal state when error was thrown: line=885672, column=20481, record=885672, 
 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
 	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
 	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
-	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)
 	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
 	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
@@ -766,7 +1307,7 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 20480 out of bounds f
 	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:202)
 	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:687)
-	... 26 more
+	... 25 more
 
 Driver stacktrace:
 	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2672)
@@ -842,7 +1383,7 @@ Parser Configuration: CsvParserSettings:
 		Quote character="
 		Quote escape character=\
 		Quote escape escape character=null
-Internal state when error was thrown: line=885672, column=20481, record=885672, charIndex=110856941, headers=[, id, date, chamber, type, raw_text, clean_text, intervention_pairs, interventions]
+Internal state when error was thrown: line=353782, column=20481, record=353782, charIndex=37172217, headers=[1610, gaceta_501 (7), 2012-07-25, house, commitee, G ACETA   DEL  C ONGRESO    501   ]
 	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
 	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
@@ -857,7 +1398,6 @@ Internal state when error was thrown: line=885672, column=20481, record=885672, 
 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
 	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
 	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
-	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)
 	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
 	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
@@ -868,27 +1408,27 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 20480 out of bounds f
 	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:202)
 	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:687)
-	... 26 more
+	... 25 more
 
-24/11/01 14:04:26 INFO SparkContext: Invoking stop() from shutdown hook
-24/11/01 14:04:26 INFO SparkUI: Stopped Spark web UI at http://midway3-0026.rcc.local:4040
-24/11/01 14:04:26 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
-24/11/01 14:04:26 INFO MemoryStore: MemoryStore cleared
-24/11/01 14:04:26 INFO BlockManager: BlockManager stopped
-24/11/01 14:04:26 INFO BlockManagerMaster: BlockManagerMaster stopped
-24/11/01 14:04:26 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
-24/11/01 14:04:26 INFO SparkContext: Successfully stopped SparkContext
-24/11/01 14:04:26 INFO ShutdownHookManager: Shutdown hook called
-24/11/01 14:04:26 INFO ShutdownHookManager: Deleting directory /tmp/spark-d5c6b829-33a1-4a8d-8a04-07d7eb040741
-24/11/01 14:04:26 INFO ShutdownHookManager: Deleting directory /tmp/spark-9f511b63-d0e7-4f21-9eec-f113cf5426f6
-24/11/01 14:04:26 INFO ShutdownHookManager: Deleting directory /tmp/spark-9f511b63-d0e7-4f21-9eec-f113cf5426f6/pyspark-342e6bb1-1069-4943-8dbf-00889c8398e8
+24/11/05 11:28:09 INFO SparkContext: Invoking stop() from shutdown hook
+24/11/05 11:28:09 INFO SparkUI: Stopped Spark web UI at http://midway3-0212.rcc.local:4040
+24/11/05 11:28:09 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+24/11/05 11:28:09 INFO MemoryStore: MemoryStore cleared
+24/11/05 11:28:09 INFO BlockManager: BlockManager stopped
+24/11/05 11:28:09 INFO BlockManagerMaster: BlockManagerMaster stopped
+24/11/05 11:28:09 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+24/11/05 11:28:09 INFO SparkContext: Successfully stopped SparkContext
+24/11/05 11:28:09 INFO ShutdownHookManager: Shutdown hook called
+24/11/05 11:28:09 INFO ShutdownHookManager: Deleting directory /tmp/spark-e723a43d-2a40-4bb0-a105-f1986a268dc0/pyspark-e1e4d6ad-debf-4104-be5f-89373ca8361a
+24/11/05 11:28:09 INFO ShutdownHookManager: Deleting directory /tmp/spark-3f53e55b-2a14-4cfa-a574-ada7186d21f2
+24/11/05 11:28:09 INFO ShutdownHookManager: Deleting directory /tmp/spark-e723a43d-2a40-4bb0-a105-f1986a268dc0
 Starting Spark job...
 CSV file read successfully
  Header: , date
  Schema: session, interventions
 Expected: session but found: 
 CSV file: file:///home/asarria/ideology/data/session_texts.csv
-24/11/01 14:04:26 ERROR Utils: Aborting task
+24/11/05 11:28:09 ERROR Utils: Aborting task
 com.univocity.parsers.common.TextParsingException: java.lang.ArrayIndexOutOfBoundsException - Index 20480 out of bounds for length 20480
 Parser Configuration: CsvParserSettings:
 	Auto configuration enabled=true
@@ -931,7 +1471,7 @@ Parser Configuration: CsvParserSettings:
 		Quote character="
 		Quote escape character=\
 		Quote escape escape character=null
-Internal state when error was thrown: line=885672, column=20481, record=885672, charIndex=110856941, headers=[, id, date, chamber, type, raw_text, clean_text, intervention_pairs, interventions]
+Internal state when error was thrown: line=353782, column=20481, record=353782, charIndex=37172217, headers=[1610, gaceta_501 (7), 2012-07-25, house, commitee, G ACETA   DEL  C ONGRESO    501   ]
 	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
 	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
@@ -946,7 +1486,6 @@ Internal state when error was thrown: line=885672, column=20481, record=885672, 
 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
 	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
 	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
-	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)
 	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
 	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
@@ -965,9 +1504,81 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 20480 out of bounds f
 	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:202)
 	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:687)
-	... 26 more
-24/11/01 14:04:26 ERROR FileFormatWriter: Job job_202411011404247997766537560883939_0000 aborted.
-24/11/01 14:04:26 ERROR Executor: Exception in task 0.0 in stage 0.0 (TID 0)
+	... 25 more
+24/11/05 11:28:09 ERROR FileFormatWriter: Job job_202411051128075953771368317207536_0000 aborted.
+24/11/05 11:28:09 ERROR Utils: Aborting task
+com.univocity.parsers.common.TextParsingException: java.lang.ArrayIndexOutOfBoundsException - null
+Parser Configuration: CsvParserSettings:
+	Auto configuration enabled=true
+	Auto-closing enabled=true
+	Autodetect column delimiter=false
+	Autodetect quotes=false
+	Column reordering enabled=true
+	Delimiters for detection=null
+	Empty value=
+	Escape unquoted values=false
+	Header extraction enabled=null
+	Headers=null
+	Ignore leading whitespaces=false
+	Ignore leading whitespaces in quotes=false
+	Ignore trailing whitespaces=false
+	Ignore trailing whitespaces in quotes=false
+	Input buffer size=1048576
+	Input reading on separate thread=false
+	Keep escape sequences=false
+	Keep quotes=false
+	Length of content displayed on error=1000
+	Line separator detection enabled=false
+	Maximum number of characters per column=-1
+	Maximum number of columns=20480
+	Normalize escaped line separators=true
+	Null value=
+	Number of records to read=all
+	Processor=none
+	Restricting data in exceptions=false
+	RowProcessor error handler=null
+	Selected fields=field selection: [0, 2]
+	Skip bits as whitespace=true
+	Skip empty lines=true
+	Unescaped quote handling=STOP_AT_DELIMITERFormat configuration:
+	CsvFormat:
+		Comment character=#
+		Field delimiter=,
+		Line separator (normalized)=\n
+		Line separator sequence=\n
+		Quote character="
+		Quote escape character=\
+		Quote escape escape character=null
+Internal state when error was thrown: line=284780, column=20481, record=284780, charIndex=32380403, headers=[175, gaceta_423 (1), 2015-04-14, senate, commitee, ACTAS DE COMISIÓN ]
+	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
+	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser$.$anonfun$parseIterator$1(UnivocityParser.scala:417)
+	at org.apache.spark.sql.catalyst.util.FailureSafeParser.parse(FailureSafeParser.scala:60)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser$.$anonfun$parseIterator$2(UnivocityParser.scala:421)
+	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:486)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:492)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:116)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+24/11/05 11:28:09 ERROR Executor: Exception in task 9.0 in stage 0.0 (TID 9)
 org.apache.spark.SparkException: Task failed while writing rows.
 	at org.apache.spark.sql.errors.QueryExecutionErrors$.taskFailedWhileWritingRowsError(QueryExecutionErrors.scala:655)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:358)
@@ -1022,7 +1633,7 @@ Parser Configuration: CsvParserSettings:
 		Quote character="
 		Quote escape character=\
 		Quote escape escape character=null
-Internal state when error was thrown: line=885672, column=20481, record=885672, charIndex=110856941, headers=[, id, date, chamber, type, raw_text, clean_text, intervention_pairs, interventions]
+Internal state when error was thrown: line=353782, column=20481, record=353782, charIndex=37172217, headers=[1610, gaceta_501 (7), 2012-07-25, house, commitee, G ACETA   DEL  C ONGRESO    501   ]
 	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
 	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
@@ -1037,7 +1648,6 @@ Internal state when error was thrown: line=885672, column=20481, record=885672, 
 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
 	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
 	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
-	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)
 	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
 	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
@@ -1048,7 +1658,233 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 20480 out of bounds f
 	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:202)
 	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:687)
-	... 26 more
+	... 25 more
+24/11/05 11:28:09 ERROR FileFormatWriter: Job job_202411051128075953771368317207536_0000 aborted.
+24/11/05 11:28:09 ERROR Executor: Exception in task 1.0 in stage 0.0 (TID 1)
+org.apache.spark.SparkException: Task failed while writing rows.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.taskFailedWhileWritingRowsError(QueryExecutionErrors.scala:655)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:358)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: com.univocity.parsers.common.TextParsingException: java.lang.ArrayIndexOutOfBoundsException - null
+Parser Configuration: CsvParserSettings:
+	Auto configuration enabled=true
+	Auto-closing enabled=true
+	Autodetect column delimiter=false
+	Autodetect quotes=false
+	Column reordering enabled=true
+	Delimiters for detection=null
+	Empty value=
+	Escape unquoted values=false
+	Header extraction enabled=null
+	Headers=null
+	Ignore leading whitespaces=false
+	Ignore leading whitespaces in quotes=false
+	Ignore trailing whitespaces=false
+	Ignore trailing whitespaces in quotes=false
+	Input buffer size=1048576
+	Input reading on separate thread=false
+	Keep escape sequences=false
+	Keep quotes=false
+	Length of content displayed on error=1000
+	Line separator detection enabled=false
+	Maximum number of characters per column=-1
+	Maximum number of columns=20480
+	Normalize escaped line separators=true
+	Null value=
+	Number of records to read=all
+	Processor=none
+	Restricting data in exceptions=false
+	RowProcessor error handler=null
+	Selected fields=field selection: [0, 2]
+	Skip bits as whitespace=true
+	Skip empty lines=true
+	Unescaped quote handling=STOP_AT_DELIMITERFormat configuration:
+	CsvFormat:
+		Comment character=#
+		Field delimiter=,
+		Line separator (normalized)=\n
+		Line separator sequence=\n
+		Quote character="
+		Quote escape character=\
+		Quote escape escape character=null
+Internal state when error was thrown: line=284780, column=20481, record=284780, charIndex=32380403, headers=[175, gaceta_423 (1), 2015-04-14, senate, commitee, ACTAS DE COMISIÓN ]
+	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
+	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser$.$anonfun$parseIterator$1(UnivocityParser.scala:417)
+	at org.apache.spark.sql.catalyst.util.FailureSafeParser.parse(FailureSafeParser.scala:60)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser$.$anonfun$parseIterator$2(UnivocityParser.scala:421)
+	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:486)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:492)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:116)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	... 9 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+24/11/05 11:28:09 ERROR Utils: Aborting task
+com.univocity.parsers.common.TextParsingException: java.lang.ArrayIndexOutOfBoundsException - null
+Parser Configuration: CsvParserSettings:
+	Auto configuration enabled=true
+	Auto-closing enabled=true
+	Autodetect column delimiter=false
+	Autodetect quotes=false
+	Column reordering enabled=true
+	Delimiters for detection=null
+	Empty value=
+	Escape unquoted values=false
+	Header extraction enabled=null
+	Headers=null
+	Ignore leading whitespaces=false
+	Ignore leading whitespaces in quotes=false
+	Ignore trailing whitespaces=false
+	Ignore trailing whitespaces in quotes=false
+	Input buffer size=1048576
+	Input reading on separate thread=false
+	Keep escape sequences=false
+	Keep quotes=false
+	Length of content displayed on error=1000
+	Line separator detection enabled=false
+	Maximum number of characters per column=-1
+	Maximum number of columns=20480
+	Normalize escaped line separators=true
+	Null value=
+	Number of records to read=all
+	Processor=none
+	Restricting data in exceptions=false
+	RowProcessor error handler=null
+	Selected fields=field selection: [0, 2]
+	Skip bits as whitespace=true
+	Skip empty lines=true
+	Unescaped quote handling=STOP_AT_DELIMITERFormat configuration:
+	CsvFormat:
+		Comment character=#
+		Field delimiter=,
+		Line separator (normalized)=\n
+		Line separator sequence=\n
+		Quote character="
+		Quote escape character=\
+		Quote escape escape character=null
+Internal state when error was thrown: line=295189, column=20481, record=295189, charIndex=39000753, headers=[política,  porque sus deseos lo vieron troncados  ]
+	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
+	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser$.$anonfun$parseIterator$1(UnivocityParser.scala:417)
+	at org.apache.spark.sql.catalyst.util.FailureSafeParser.parse(FailureSafeParser.scala:60)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser$.$anonfun$parseIterator$2(UnivocityParser.scala:421)
+	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:486)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:492)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:116)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+24/11/05 11:28:09 ERROR FileFormatWriter: Job job_202411051128075953771368317207536_0000 aborted.
+24/11/05 11:28:09 ERROR Executor: Exception in task 5.0 in stage 0.0 (TID 5)
+org.apache.spark.SparkException: Task failed while writing rows.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.taskFailedWhileWritingRowsError(QueryExecutionErrors.scala:655)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:358)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: com.univocity.parsers.common.TextParsingException: java.lang.ArrayIndexOutOfBoundsException - null
+Parser Configuration: CsvParserSettings:
+	Auto configuration enabled=true
+	Auto-closing enabled=true
+	Autodetect column delimiter=false
+	Autodetect quotes=false
+	Column reordering enabled=true
+	Delimiters for detection=null
+	Empty value=
+	Escape unquoted values=false
+	Header extraction enabled=null
+	Headers=null
+	Ignore leading whitespaces=false
+	Ignore leading whitespaces in quotes=false
+	Ignore trailing whitespaces=false
+	Ignore trailing whitespaces in quotes=false
+	Input buffer size=1048576
+	Input reading on separate thread=false
+	Keep escape sequences=false
+	Keep quotes=false
+	Length of content displayed on error=1000
+	Line separator detection enabled=false
+	Maximum number of characters per column=-1
+	Maximum number of columns=20480
+	Normalize escaped line separators=true
+	Null value=
+	Number of records to read=all
+	Processor=none
+	Restricting data in exceptions=false
+	RowProcessor error handler=null
+	Selected fields=field selection: [0, 2]
+	Skip bits as whitespace=true
+	Skip empty lines=true
+	Unescaped quote handling=STOP_AT_DELIMITERFormat configuration:
+	CsvFormat:
+		Comment character=#
+		Field delimiter=,
+		Line separator (normalized)=\n
+		Line separator sequence=\n
+		Quote character="
+		Quote escape character=\
+		Quote escape escape character=null
+Internal state when error was thrown: line=295189, column=20481, record=295189, charIndex=39000753, headers=[política,  porque sus deseos lo vieron troncados  ]
+	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
+	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser$.$anonfun$parseIterator$1(UnivocityParser.scala:417)
+	at org.apache.spark.sql.catalyst.util.FailureSafeParser.parse(FailureSafeParser.scala:60)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser$.$anonfun$parseIterator$2(UnivocityParser.scala:421)
+	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:486)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:492)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:116)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	... 9 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException
 	at org.apache.spark.sql.errors.QueryExecutionErrors$.taskFailedWhileWritingRowsError(QueryExecutionErrors.scala:655)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:358)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
@@ -1102,7 +1938,7 @@ Parser Configuration: CsvParserSettings:
 		Quote character="
 		Quote escape character=\
 		Quote escape escape character=null
-Internal state when error was thrown: line=885672, column=20481, record=885672, charIndex=110856941, headers=[, id, date, chamber, type, raw_text, clean_text, intervention_pairs, interventions]
+Internal state when error was thrown: line=353782, column=20481, record=353782, charIndex=37172217, headers=[1610, gaceta_501 (7), 2012-07-25, house, commitee, G ACETA   DEL  C ONGRESO    501   ]
 	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
 	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
@@ -1117,7 +1953,6 @@ Internal state when error was thrown: line=885672, column=20481, record=885672, 
 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
 	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
 	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
-	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)
 	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
 	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
@@ -1128,9 +1963,157 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 20480 out of bounds f
 	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:202)
 	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:687)
-	... 26 more
+	... 25 more
 
-24/11/01 14:04:26 ERROR TaskSetManager: Task 0 in stage 0.0 failed 1 times; aborting job
+24/11/05 11:28:09 ERROR TaskSetManager: Task 9 in stage 0.0 failed 1 times; aborting job
+24/11/05 11:28:09 ERROR Utils: Aborting task
+org.apache.spark.TaskKilledException
+	at org.apache.spark.TaskContextImpl.killTaskIfInterrupted(TaskContextImpl.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:115)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+24/11/05 11:28:09 ERROR Utils: Aborting task
+org.apache.spark.TaskKilledException
+	at org.apache.spark.TaskContextImpl.killTaskIfInterrupted(TaskContextImpl.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:115)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+24/11/05 11:28:09 ERROR Utils: Aborting task
+org.apache.spark.TaskKilledException
+	at org.apache.spark.TaskContextImpl.killTaskIfInterrupted(TaskContextImpl.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:115)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+24/11/05 11:28:09 ERROR Utils: Aborting task
+org.apache.spark.TaskKilledException
+	at org.apache.spark.TaskContextImpl.killTaskIfInterrupted(TaskContextImpl.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:115)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+24/11/05 11:28:09 ERROR Utils: Aborting task
+org.apache.spark.TaskKilledException
+	at org.apache.spark.TaskContextImpl.killTaskIfInterrupted(TaskContextImpl.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:115)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+24/11/05 11:28:09 ERROR Utils: Aborting task
+org.apache.spark.TaskKilledException
+	at org.apache.spark.TaskContextImpl.killTaskIfInterrupted(TaskContextImpl.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:115)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+24/11/05 11:28:09 ERROR FileFormatWriter: Job job_202411051128075953771368317207536_0000 aborted.
+24/11/05 11:28:09 ERROR Utils: Aborting task
+org.apache.spark.TaskKilledException
+	at org.apache.spark.TaskContextImpl.killTaskIfInterrupted(TaskContextImpl.scala:217)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:115)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
 	at org.apache.spark.sql.errors.QueryExecutionErrors$.taskFailedWhileWritingRowsError(QueryExecutionErrors.scala:655)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:358)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
@@ -1184,7 +2167,7 @@ Parser Configuration: CsvParserSettings:
 		Quote character="
 		Quote escape character=\
 		Quote escape escape character=null
-Internal state when error was thrown: line=885672, column=20481, record=885672, charIndex=110856941, headers=[, id, date, chamber, type, raw_text, clean_text, intervention_pairs, interventions]
+Internal state when error was thrown: line=353782, column=20481, record=353782, charIndex=37172217, headers=[1610, gaceta_501 (7), 2012-07-25, house, commitee, G ACETA   DEL  C ONGRESO    501   ]
 	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
 	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
@@ -1199,7 +2182,6 @@ Internal state when error was thrown: line=885672, column=20481, record=885672, 
 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
 	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
 	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
-	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)
 	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
 	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
@@ -1210,11 +2192,17 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 20480 out of bounds f
 	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:202)
 	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:687)
-	... 26 more
+	... 25 more
 
 Driver stacktrace:
-24/11/01 14:04:26 ERROR FileFormatWriter: Aborting job 53942a76-6fb3-4e67-9dbd-567cc6685347.
-org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (midway3-0026.rcc.local executor driver): org.apache.spark.SparkException: Task failed while writing rows.
+24/11/05 11:28:09 ERROR FileFormatWriter: Job job_202411051128075953771368317207536_0000 aborted.
+24/11/05 11:28:09 ERROR FileFormatWriter: Job job_202411051128075953771368317207536_0000 aborted.
+24/11/05 11:28:09 ERROR FileFormatWriter: Job job_202411051128075953771368317207536_0000 aborted.
+24/11/05 11:28:09 ERROR FileFormatWriter: Job job_202411051128075953771368317207536_0000 aborted.
+24/11/05 11:28:09 ERROR FileFormatWriter: Job job_202411051128075953771368317207536_0000 aborted.
+24/11/05 11:28:09 ERROR FileFormatWriter: Job job_202411051128075953771368317207536_0000 aborted.
+24/11/05 11:28:09 ERROR FileFormatWriter: Aborting job eb4b673e-a0d1-46ba-ac4a-515c0433466e.
+org.apache.spark.SparkException: Job aborted due to stage failure: Task 9 in stage 0.0 failed 1 times, most recent failure: Lost task 9.0 in stage 0.0 (TID 9) (midway3-0212.rcc.local executor driver): org.apache.spark.SparkException: Task failed while writing rows.
 	at org.apache.spark.sql.errors.QueryExecutionErrors$.taskFailedWhileWritingRowsError(QueryExecutionErrors.scala:655)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:358)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
@@ -1268,7 +2256,7 @@ Parser Configuration: CsvParserSettings:
 		Quote character="
 		Quote escape character=\
 		Quote escape escape character=null
-Internal state when error was thrown: line=885672, column=20481, record=885672, charIndex=110856941, headers=[, id, date, chamber, type, raw_text, clean_text, intervention_pairs, interventions]
+Internal state when error was thrown: line=353782, column=20481, record=353782, charIndex=37172217, headers=[1610, gaceta_501 (7), 2012-07-25, house, commitee, G ACETA   DEL  C ONGRESO    501   ]
 	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
 	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
@@ -1283,7 +2271,6 @@ Internal state when error was thrown: line=885672, column=20481, record=885672, 
 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
 	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
 	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
-	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)
 	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
 	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
@@ -1294,7 +2281,7 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 20480 out of bounds f
 	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:202)
 	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:687)
-	... 26 more
+	... 25 more
 
 Driver stacktrace:
 	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2672)
@@ -1411,7 +2398,7 @@ Parser Configuration: CsvParserSettings:
 		Quote character="
 		Quote escape character=\
 		Quote escape escape character=null
-Internal state when error was thrown: line=885672, column=20481, record=885672, charIndex=110856941, headers=[, id, date, chamber, type, raw_text, clean_text, intervention_pairs, interventions]
+Internal state when error was thrown: line=353782, column=20481, record=353782, charIndex=37172217, headers=[1610, gaceta_501 (7), 2012-07-25, house, commitee, G ACETA   DEL  C ONGRESO    501   ]
 	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
 	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
@@ -1426,7 +2413,6 @@ Internal state when error was thrown: line=885672, column=20481, record=885672, 
 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
 	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
 	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
-	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)
 	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
 	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
@@ -1437,10 +2423,10 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 20480 out of bounds f
 	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:202)
 	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:687)
-	... 26 more
+	... 25 more
 Traceback (most recent call last):
   File "/home/asarria/ideology/create_intervention_df.py", line 42, in <module>
-    intervention_df.coalesce(1).write.csv(r"data/interventions.csv", header=True)
+    intervention_df.write.csv(r"data/interventions", header=True, mode="overwrite")
   File "/software/spark-3.3.2-el8-x86_64/python/lib/pyspark.zip/pyspark/sql/readwriter.py", line 1240, in csv
   File "/software/spark-3.3.2-el8-x86_64/python/lib/py4j-0.10.9.5-src.zip/py4j/java_gateway.py", line 1321, in __call__
   File "/software/spark-3.3.2-el8-x86_64/python/lib/pyspark.zip/pyspark/sql/utils.py", line 190, in deco
@@ -1491,7 +2477,7 @@ py4j.protocol.Py4JJavaError: An error occurred while calling o54.csv.
 	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
 	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (midway3-0026.rcc.local executor driver): org.apache.spark.SparkException: Task failed while writing rows.
+Caused by: org.apache.spark.SparkException: Job aborted due to stage failure: Task 9 in stage 0.0 failed 1 times, most recent failure: Lost task 9.0 in stage 0.0 (TID 9) (midway3-0212.rcc.local executor driver): org.apache.spark.SparkException: Task failed while writing rows.
 	at org.apache.spark.sql.errors.QueryExecutionErrors$.taskFailedWhileWritingRowsError(QueryExecutionErrors.scala:655)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:358)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
@@ -1545,7 +2531,7 @@ Parser Configuration: CsvParserSettings:
 		Quote character="
 		Quote escape character=\
 		Quote escape escape character=null
-Internal state when error was thrown: line=885672, column=20481, record=885672, charIndex=110856941, headers=[, id, date, chamber, type, raw_text, clean_text, intervention_pairs, interventions]
+Internal state when error was thrown: line=353782, column=20481, record=353782, charIndex=37172217, headers=[1610, gaceta_501 (7), 2012-07-25, house, commitee, G ACETA   DEL  C ONGRESO    501   ]
 	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
 	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
@@ -1560,7 +2546,6 @@ Internal state when error was thrown: line=885672, column=20481, record=885672, 
 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
 	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
 	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
-	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)
 	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
 	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
@@ -1571,7 +2556,7 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 20480 out of bounds f
 	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:202)
 	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:687)
-	... 26 more
+	... 25 more
 
 Driver stacktrace:
 	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2672)
@@ -1647,7 +2632,7 @@ Parser Configuration: CsvParserSettings:
 		Quote character="
 		Quote escape character=\
 		Quote escape escape character=null
-Internal state when error was thrown: line=885672, column=20481, record=885672, charIndex=110856941, headers=[, id, date, chamber, type, raw_text, clean_text, intervention_pairs, interventions]
+Internal state when error was thrown: line=353782, column=20481, record=353782, charIndex=37172217, headers=[1610, gaceta_501 (7), 2012-07-25, house, commitee, G ACETA   DEL  C ONGRESO    501   ]
 	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
 	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
@@ -1662,7 +2647,6 @@ Internal state when error was thrown: line=885672, column=20481, record=885672, 
 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
 	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
 	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
-	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)
 	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
 	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
 	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
@@ -1673,5 +2657,299 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 20480 out of bounds f
 	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:202)
 	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
 	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:687)
-	... 26 more
+	... 25 more
 
+Starting Spark job...
+CSV file read successfully
+ Header: , date
+ Schema: session, interventions
+Expected: session but found: 
+CSV file: file:///home/asarria/ideology/data/session_texts.csv
+24/11/05 11:28:09 ERROR Utils: Aborting task
+com.univocity.parsers.common.TextParsingException: java.lang.ArrayIndexOutOfBoundsException - Index 20480 out of bounds for length 20480
+Parser Configuration: CsvParserSettings:
+	Auto configuration enabled=true
+	Auto-closing enabled=true
+	Autodetect column delimiter=false
+	Autodetect quotes=false
+	Column reordering enabled=true
+	Delimiters for detection=null
+	Empty value=
+	Escape unquoted values=false
+	Header extraction enabled=null
+	Headers=null
+	Ignore leading whitespaces=false
+	Ignore leading whitespaces in quotes=false
+	Ignore trailing whitespaces=false
+	Ignore trailing whitespaces in quotes=false
+	Input buffer size=1048576
+	Input reading on separate thread=false
+	Keep escape sequences=false
+	Keep quotes=false
+	Length of content displayed on error=1000
+	Line separator detection enabled=false
+	Maximum number of characters per column=-1
+	Maximum number of columns=20480
+	Normalize escaped line separators=true
+	Null value=
+	Number of records to read=all
+	Processor=none
+	Restricting data in exceptions=false
+	RowProcessor error handler=null
+	Selected fields=field selection: [0, 2]
+	Skip bits as whitespace=true
+	Skip empty lines=true
+	Unescaped quote handling=STOP_AT_DELIMITERFormat configuration:
+	CsvFormat:
+		Comment character=#
+		Field delimiter=,
+		Line separator (normalized)=\n
+		Line separator sequence=\n
+		Quote character="
+		Quote escape character=\
+		Quote escape escape character=null
+Internal state when error was thrown: line=353782, column=20481, record=353782, charIndex=37172217, headers=[1610, gaceta_501 (7), 2012-07-25, house, commitee, G ACETA   DEL  C ONGRESO    501   ]
+	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
+	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser$.$anonfun$parseIterator$1(UnivocityParser.scala:417)
+	at org.apache.spark.sql.catalyst.util.FailureSafeParser.parse(FailureSafeParser.scala:60)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser$.$anonfun$parseIterator$2(UnivocityParser.scala:421)
+	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:486)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:492)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:116)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 20480 out of bounds for length 20480
+	at com.univocity.parsers.common.ParserOutput.valueParsed(ParserOutput.java:363)
+	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:202)
+	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
+	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:687)
+	... 25 more
+24/11/05 11:28:09 ERROR FileFormatWriter: Job job_202411051128075953771368317207536_0000 aborted.
+24/11/05 11:28:09 ERROR Utils: Aborting task
+com.univocity.parsers.common.TextParsingException: java.lang.ArrayIndexOutOfBoundsException - null
+Parser Configuration: CsvParserSettings:
+	Auto configuration enabled=true
+	Auto-closing enabled=true
+	Autodetect column delimiter=false
+	Autodetect quotes=false
+	Column reordering enabled=true
+	Delimiters for detection=null
+	Empty value=
+	Escape unquoted values=false
+	Header extraction enabled=null
+	Headers=null
+	Ignore leading whitespaces=false
+	Ignore leading whitespaces in quotes=false
+	Ignore trailing whitespaces=false
+	Ignore trailing whitespaces in quotes=false
+	Input buffer size=1048576
+	Input reading on separate thread=false
+	Keep escape sequences=false
+	Keep quotes=false
+	Length of content displayed on error=1000
+	Line separator detection enabled=false
+	Maximum number of characters per column=-1
+	Maximum number of columns=20480
+	Normalize escaped line separators=true
+	Null value=
+	Number of records to read=all
+	Processor=none
+	Restricting data in exceptions=false
+	RowProcessor error handler=null
+	Selected fields=field selection: [0, 2]
+	Skip bits as whitespace=true
+	Skip empty lines=true
+	Unescaped quote handling=STOP_AT_DELIMITERFormat configuration:
+	CsvFormat:
+		Comment character=#
+		Field delimiter=,
+		Line separator (normalized)=\n
+		Line separator sequence=\n
+		Quote character="
+		Quote escape character=\
+		Quote escape escape character=null
+Internal state when error was thrown: line=284780, column=20481, record=284780, charIndex=32380403, headers=[175, gaceta_423 (1), 2015-04-14, senate, commitee, ACTAS DE COMISIÓN ]
+	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
+	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser$.$anonfun$parseIterator$1(UnivocityParser.scala:417)
+	at org.apache.spark.sql.catalyst.util.FailureSafeParser.parse(FailureSafeParser.scala:60)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser$.$anonfun$parseIterator$2(UnivocityParser.scala:421)
+	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:486)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:492)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:116)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+24/11/05 11:28:09 ERROR Executor: Exception in task 9.0 in stage 0.0 (TID 9)
+org.apache.spark.SparkException: Task failed while writing rows.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.taskFailedWhileWritingRowsError(QueryExecutionErrors.scala:655)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:358)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: com.univocity.parsers.common.TextParsingException: java.lang.ArrayIndexOutOfBoundsException - Index 20480 out of bounds for length 20480
+Parser Configuration: CsvParserSettings:
+	Auto configuration enabled=true
+	Auto-closing enabled=true
+	Autodetect column delimiter=false
+	Autodetect quotes=false
+	Column reordering enabled=true
+	Delimiters for detection=null
+	Empty value=
+	Escape unquoted values=false
+	Header extraction enabled=null
+	Headers=null
+	Ignore leading whitespaces=false
+	Ignore leading whitespaces in quotes=false
+	Ignore trailing whitespaces=false
+	Ignore trailing whitespaces in quotes=false
+	Input buffer size=1048576
+	Input reading on separate thread=false
+	Keep escape sequences=false
+	Keep quotes=false
+	Length of content displayed on error=1000
+	Line separator detection enabled=false
+	Maximum number of characters per column=-1
+	Maximum number of columns=20480
+	Normalize escaped line separators=true
+	Null value=
+	Number of records to read=all
+	Processor=none
+	Restricting data in exceptions=false
+	RowProcessor error handler=null
+	Selected fields=field selection: [0, 2]
+	Skip bits as whitespace=true
+	Skip empty lines=true
+	Unescaped quote handling=STOP_AT_DELIMITERFormat configuration:
+	CsvFormat:
+		Comment character=#
+		Field delimiter=,
+		Line separator (normalized)=\n
+		Line separator sequence=\n
+		Quote character="
+		Quote escape character=\
+		Quote escape escape character=null
+Internal state when error was thrown: line=353782, column=20481, record=353782, charIndex=37172217, headers=[1610, gaceta_501 (7), 2012-07-25, house, commitee, G ACETA   DEL  C ONGRESO    501   ]
+	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
+	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:707)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser.$anonfun$parse$2(UnivocityParser.scala:275)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser$.$anonfun$parseIterator$1(UnivocityParser.scala:417)
+	at org.apache.spark.sql.catalyst.util.FailureSafeParser.parse(FailureSafeParser.scala:60)
+	at org.apache.spark.sql.catalyst.csv.UnivocityParser$.$anonfun$parseIterator$2(UnivocityParser.scala:421)
+	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:486)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:492)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:116)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anon$1.hasNext(WholeStageCodegenExec.scala:760)
+	at org.apache.spark.sql.execution.datasources.FileFormatDataWriter.writeWithIterator(FileFormatDataWriter.scala:91)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$executeTask$1(FileFormatWriter.scala:341)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1538)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:348)
+	... 9 more
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 20480 out of bounds for length 20480
+	at com.univocity.parsers.common.ParserOutput.valueParsed(ParserOutput.java:363)
+	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:202)
+	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
+	at com.univocity.parsers.common.AbstractParser.parseLine(AbstractParser.java:687)
+	... 25 more
+24/11/05 11:28:09 ERROR FileFormatWriter: Job job_202411051128075953771368317207536_0000 aborted.
+24/11/05 11:28:09 ERROR Executor: Exception in task 1.0 in stage 0.0 (TID 1)
+org.apache.spark.SparkException: Task failed while writing rows.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.taskFailedWhileWritingRowsError(QueryExecutionErrors.scala:655)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.executeTask(FileFormatWriter.scala:358)
+	at org.apache.spark.sql.execution.datasources.FileFormatWriter$.$anonfun$write$22(FileFormatWriter.scala:266)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
+	at org.apache.spark.scheduler.Task.run(Task.scala:136)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: com.univocity.parsers.common.TextParsingException: java.lang.ArrayIndexOutOfBoundsException - null
+Parser Configuration: CsvParserSettings:
+	Auto configuration enabled=true
+	Auto-closing enabled=true
+	Autodetect column delimiter=false
+	Autodetect quotes=false
+	Column reordering enabled=true
+	Delimiters for detection=null
+	Empty value=
+	Escape unquoted values=false
+	Header extraction enabled=null
+	Headers=null
+	Ignore leading whitespaces=false
+	Ignore leading whitespaces in quotes=false
+	Ignore trailing whitespaces=false
+	Ignore trailing whitespaces in quotes=false
+	Input buffer size=1048576
+	Input reading on separate thread=false
+	Keep escape sequences=false
+	Keep quotes=false
+	Length of content displayed on error=1000
+	Line separator detection enabled=false
+	Maximum number of characters per column=-1
+	Maximum number of columns=20480
+	Normalize escaped line separators=true
+	Null value=
+	Number of records to read=all
+	Processor=none
+	Restricting data in exceptions=false
+	RowProcessor error handler=null
+	Selected fields=field selection: [0, 2]
+	Skip bits as whitespace=true
+	Skip empty lines=true
+	Unescaped quote handling=STOP_AT_DELIMITERFormat configuration:
+	CsvFormat:
+		Comment character=#
+		Field delimiter=,
+		Line separator (normalized)=\n
+		Line separator sequence=\n
+		Quote character="
+		Quote escape character=\
+		Quote escape escape character=null
+Internal state when error was thrown: line=284780, column=20481, record=284780, charIndex=32380403, headers=[175, gaceta_423 (1), 2015-04-14, senate, commitee, ACTAS DE COMISIÓN ]
