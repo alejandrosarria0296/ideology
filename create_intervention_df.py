@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import explode, col, split, monotonically_increasing_id, expr, concat_ws
-from pyspark.sql.types import StructType, StructField, StringType, ArrayType, IntegerType
+import pyspark.sql.functions as F
+from pyspark.sql.types import StructType, StructField, StringType, IntegerType
 
 # Initialize Spark session
 spark = SparkSession.builder \
@@ -10,17 +10,19 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 def create_intervention_df(df):
-    df = df.withColumn("interventions", 
-                       expr("transform(split(interventions, '\\], \\['), x -> split(regexp_replace(x, '[\\[\\]]', ''), ', '))"))
-
-    # Explode the 'interventions' array into individual rows
-    exploded_df = df.withColumn("intervention", explode(col("interventions")))    
-
-    # Add a unique ID for each intervention
-    intervention_df = exploded_df.withColumn("int_id", monotonically_increasing_id()) \
-                                    .withColumn("intervention", concat_ws(", ", col("intervention")))
+    # Process the 'interventions' column by removing outer brackets and splitting by inner pattern
+    df = df.withColumn("interventions", F.regexp_replace("interventions", r"^\[|\]$", "")) \
+           .withColumn("interventions", F.split(F.col("interventions"), r"\], \["))
     
-    return intervention_df.select(col("id").alias("session"), "int_id", "intervention")
+    # Explode the 'interventions' array into individual rows
+    exploded_df = df.withColumn("intervention", F.explode(F.col("interventions")))
+    
+    # Add a unique ID for each intervention
+    intervention_df = exploded_df.withColumn("int_id", F.monotonically_increasing_id()) \
+                                 .withColumn("intervention", F.concat_ws(", ", F.col("intervention")))
+    
+    # Select and rename columns as needed
+    return intervention_df.select(F.col("id").alias("session"), "int_id", "intervention")
 
 if __name__ == "__main__":
     # Define schema for CSV file
@@ -51,5 +53,6 @@ if __name__ == "__main__":
     # Save the result to CSV
     intervention_df.write.csv(r"data/interventions", header=True, mode="overwrite")
     print("Number of rows in intervention DataFrame:", intervention_df.count())
+    
     # Stop the Spark session
     spark.stop()
