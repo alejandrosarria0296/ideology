@@ -42,7 +42,7 @@ if __name__ == "__main__":
     print("Starting Spark job...")
     try:
         df = spark.read.csv(original_df, schema=schema, header=True,
-                            multiLine=True, escape='"', maxCharsPerColumn=2048000)
+                            multiLine=True, escape='"', maxCharsPerColumn=8192000)
         print("CSV file read successfully")
     except Exception as e:
         print(f"Error reading CSV file: {e}")
