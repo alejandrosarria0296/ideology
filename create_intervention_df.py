@@ -13,15 +13,14 @@ def create_intervention_df(df):
     # Process the 'interventions' column by removing outer brackets and splitting by inner pattern
     df = df.withColumn("interventions", F.regexp_replace("interventions", r"^\[|\]$", "")) \
            .withColumn("interventions", F.split(F.col("interventions"), r"\], \["))
-    
-    # Explode the 'interventions' array into individual rows
+
+    # Now explode the 'interventions' array to create individual rows
     exploded_df = df.withColumn("intervention", F.explode(F.col("interventions")))
-    
+
     # Add a unique ID for each intervention
-    intervention_df = exploded_df.withColumn("int_id", F.monotonically_increasing_id()) \
-                                 .withColumn("intervention", F.concat_ws(", ", F.col("intervention")))
-    
-    # Select and rename columns as needed
+    intervention_df = exploded_df.withColumn("int_id", F.monotonically_increasing_id())
+
+    # Select and rename columns: 'id' as 'session', and use 'intervention' for the exploded values
     return intervention_df.select(F.col("id").alias("session"), "int_id", "intervention")
 
 if __name__ == "__main__":
@@ -41,8 +40,7 @@ if __name__ == "__main__":
     original_df = r"/home/asarria/ideology/data/session_texts.csv"
     print("Starting Spark job...")
     try:
-        df = spark.read.csv(original_df, schema=schema, header=True,
-                            multiLine=True, escape='"', maxCharsPerColumn=8192000)
+        df = spark.read.csv(original_df, schema=schema, header=True, escape='"', maxCharsPerColumn=8192000)
         print("CSV file read successfully")
     except Exception as e:
         print(f"Error reading CSV file: {e}")
