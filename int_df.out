@@ -1,811 +1,167 @@
-24/11/06 00:29:11 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-24/11/06 00:29:14 INFO SparkContext: Running Spark version 3.3.2
-24/11/06 00:29:14 INFO ResourceUtils: ==============================================================
-24/11/06 00:29:14 INFO ResourceUtils: No custom resources configured for spark.driver.
-24/11/06 00:29:14 INFO ResourceUtils: ==============================================================
-24/11/06 00:29:14 INFO SparkContext: Submitted application: Create Intervention DataFrame
-24/11/06 00:29:14 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
-24/11/06 00:29:14 INFO ResourceProfile: Limiting resource is cpu
-24/11/06 00:29:14 INFO ResourceProfileManager: Added ResourceProfile id: 0
-24/11/06 00:29:14 INFO SecurityManager: Changing view acls to: asarria
-24/11/06 00:29:14 INFO SecurityManager: Changing modify acls to: asarria
-24/11/06 00:29:14 INFO SecurityManager: Changing view acls groups to: 
-24/11/06 00:29:14 INFO SecurityManager: Changing modify acls groups to: 
-24/11/06 00:29:14 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(asarria); groups with view permissions: Set(); users  with modify permissions: Set(asarria); groups with modify permissions: Set()
-24/11/06 00:29:14 INFO Utils: Successfully started service 'sparkDriver' on port 43567.
-24/11/06 00:29:14 INFO SparkEnv: Registering MapOutputTracker
-24/11/06 00:29:14 INFO SparkEnv: Registering BlockManagerMaster
-24/11/06 00:29:14 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
-24/11/06 00:29:14 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
-24/11/06 00:29:14 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
-24/11/06 00:29:14 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-ab2a21dd-eb4d-4262-8011-aae3249f21fa
-24/11/06 00:29:14 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
-24/11/06 00:29:14 INFO SparkEnv: Registering OutputCommitCoordinator
-24/11/06 00:29:14 INFO Utils: Successfully started service 'SparkUI' on port 4040.
-24/11/06 00:29:14 INFO SparkContext: Added JAR file:///project/macs40123/spark-jars/graphframes-0.8.3-spark3.4-s_2.12.jar at spark://midway3-0116.rcc.local:43567/jars/graphframes-0.8.3-spark3.4-s_2.12.jar with timestamp 1730874554088
-24/11/06 00:29:14 INFO Executor: Starting executor ID driver on host midway3-0116.rcc.local
-24/11/06 00:29:14 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
-24/11/06 00:29:14 INFO Executor: Fetching spark://midway3-0116.rcc.local:43567/jars/graphframes-0.8.3-spark3.4-s_2.12.jar with timestamp 1730874554088
-24/11/06 00:29:14 INFO TransportClientFactory: Successfully created connection to midway3-0116.rcc.local/10.50.250.116:43567 after 18 ms (0 ms spent in bootstraps)
-24/11/06 00:29:14 INFO Utils: Fetching spark://midway3-0116.rcc.local:43567/jars/graphframes-0.8.3-spark3.4-s_2.12.jar to /tmp/spark-9660a588-3d76-40c5-a73e-c3d1f9be52c0/userFiles-3f3965f9-d8b9-4376-8a9e-52680bfda12d/fetchFileTemp834295910131299433.tmp
-24/11/06 00:29:14 INFO Executor: Adding file:/tmp/spark-9660a588-3d76-40c5-a73e-c3d1f9be52c0/userFiles-3f3965f9-d8b9-4376-8a9e-52680bfda12d/graphframes-0.8.3-spark3.4-s_2.12.jar to class loader
-24/11/06 00:29:14 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 42391.
-24/11/06 00:29:14 INFO NettyBlockTransferService: Server created on midway3-0116.rcc.local:42391
-24/11/06 00:29:14 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
-24/11/06 00:29:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, midway3-0116.rcc.local, 42391, None)
-24/11/06 00:29:14 INFO BlockManagerMasterEndpoint: Registering block manager midway3-0116.rcc.local:42391 with 434.4 MiB RAM, BlockManagerId(driver, midway3-0116.rcc.local, 42391, None)
-24/11/06 00:29:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, midway3-0116.rcc.local, 42391, None)
-24/11/06 00:29:14 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, midway3-0116.rcc.local, 42391, None)
+24/11/07 12:58:59 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/11/07 12:59:02 INFO SparkContext: Running Spark version 3.3.2
+24/11/07 12:59:02 INFO ResourceUtils: ==============================================================
+24/11/07 12:59:02 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/11/07 12:59:02 INFO ResourceUtils: ==============================================================
+24/11/07 12:59:02 INFO SparkContext: Submitted application: Create Intervention DataFrame
+24/11/07 12:59:02 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/11/07 12:59:02 INFO ResourceProfile: Limiting resource is cpu
+24/11/07 12:59:02 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/11/07 12:59:02 INFO SecurityManager: Changing view acls to: asarria
+24/11/07 12:59:02 INFO SecurityManager: Changing modify acls to: asarria
+24/11/07 12:59:02 INFO SecurityManager: Changing view acls groups to: 
+24/11/07 12:59:02 INFO SecurityManager: Changing modify acls groups to: 
+24/11/07 12:59:02 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(asarria); groups with view permissions: Set(); users  with modify permissions: Set(asarria); groups with modify permissions: Set()
+24/11/07 12:59:02 INFO Utils: Successfully started service 'sparkDriver' on port 39597.
+24/11/07 12:59:02 INFO SparkEnv: Registering MapOutputTracker
+24/11/07 12:59:02 INFO SparkEnv: Registering BlockManagerMaster
+24/11/07 12:59:02 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/11/07 12:59:02 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/11/07 12:59:02 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/11/07 12:59:02 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-90e8ac09-888c-49ab-a477-90072778293b
+24/11/07 12:59:02 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+24/11/07 12:59:02 INFO SparkEnv: Registering OutputCommitCoordinator
+24/11/07 12:59:03 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+24/11/07 12:59:03 INFO SparkContext: Added JAR file:///project/macs40123/spark-jars/graphframes-0.8.3-spark3.4-s_2.12.jar at spark://midway3-0149.rcc.local:39597/jars/graphframes-0.8.3-spark3.4-s_2.12.jar with timestamp 1731005942496
+24/11/07 12:59:03 INFO Executor: Starting executor ID driver on host midway3-0149.rcc.local
+24/11/07 12:59:03 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/11/07 12:59:03 INFO Executor: Fetching spark://midway3-0149.rcc.local:39597/jars/graphframes-0.8.3-spark3.4-s_2.12.jar with timestamp 1731005942496
+24/11/07 12:59:03 INFO TransportClientFactory: Successfully created connection to midway3-0149.rcc.local/10.50.250.149:39597 after 19 ms (0 ms spent in bootstraps)
+24/11/07 12:59:03 INFO Utils: Fetching spark://midway3-0149.rcc.local:39597/jars/graphframes-0.8.3-spark3.4-s_2.12.jar to /tmp/spark-62491d8d-4788-44af-ad9b-7bef5e249109/userFiles-3d09273c-0c41-4658-812a-76540c7a3cbb/fetchFileTemp1992474453919238667.tmp
+24/11/07 12:59:03 INFO Executor: Adding file:/tmp/spark-62491d8d-4788-44af-ad9b-7bef5e249109/userFiles-3d09273c-0c41-4658-812a-76540c7a3cbb/graphframes-0.8.3-spark3.4-s_2.12.jar to class loader
+24/11/07 12:59:03 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35457.
+24/11/07 12:59:03 INFO NettyBlockTransferService: Server created on midway3-0149.rcc.local:35457
+24/11/07 12:59:03 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/11/07 12:59:03 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, midway3-0149.rcc.local, 35457, None)
+24/11/07 12:59:03 INFO BlockManagerMasterEndpoint: Registering block manager midway3-0149.rcc.local:35457 with 434.4 MiB RAM, BlockManagerId(driver, midway3-0149.rcc.local, 35457, None)
+24/11/07 12:59:03 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, midway3-0149.rcc.local, 35457, None)
+24/11/07 12:59:03 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, midway3-0149.rcc.local, 35457, None)
 Starting Spark job...
-24/11/06 00:29:15 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
-24/11/06 00:29:15 INFO SharedState: Warehouse path is 'file:/home/asarria/ideology/spark-warehouse'.
-24/11/06 00:29:15 INFO InMemoryFileIndex: It took 24 ms to list leaf files for 1 paths.
+24/11/07 12:59:03 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+24/11/07 12:59:03 INFO SharedState: Warehouse path is 'file:/home/asarria/ideology/spark-warehouse'.
+24/11/07 12:59:04 INFO InMemoryFileIndex: It took 28 ms to list leaf files for 1 paths.
 CSV file read successfully
-24/11/06 00:29:17 INFO FileSourceStrategy: Pushed Filters: 
-24/11/06 00:29:17 INFO FileSourceStrategy: Post-Scan Filters: 
-24/11/06 00:29:17 INFO FileSourceStrategy: Output Data Schema: struct<id: string, date: string, chamber: string, type: string, raw_text: string ... 6 more fields>
-24/11/06 00:29:17 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 200.6 KiB, free 434.2 MiB)
-24/11/06 00:29:17 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 34.4 KiB, free 434.2 MiB)
-24/11/06 00:29:17 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on midway3-0116.rcc.local:42391 (size: 34.4 KiB, free: 434.4 MiB)
-24/11/06 00:29:17 INFO SparkContext: Created broadcast 0 from collect at /home/asarria/ideology/create_intervention_df_manual.py:36
-24/11/06 00:29:17 INFO FileSourceScanExec: Planning scan with bin packing, max size: 268435456 bytes, open cost is considered as scanning 4194304 bytes.
-24/11/06 00:29:17 INFO SparkContext: Starting job: collect at /home/asarria/ideology/create_intervention_df_manual.py:36
-24/11/06 00:29:17 INFO DAGScheduler: Got job 0 (collect at /home/asarria/ideology/create_intervention_df_manual.py:36) with 1 output partitions
-24/11/06 00:29:17 INFO DAGScheduler: Final stage: ResultStage 0 (collect at /home/asarria/ideology/create_intervention_df_manual.py:36)
-24/11/06 00:29:17 INFO DAGScheduler: Parents of final stage: List()
-24/11/06 00:29:17 INFO DAGScheduler: Missing parents: List()
-24/11/06 00:29:17 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[2] at collect at /home/asarria/ideology/create_intervention_df_manual.py:36), which has no missing parents
-24/11/06 00:29:17 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 11.1 KiB, free 434.2 MiB)
-24/11/06 00:29:17 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 6.0 KiB, free 434.2 MiB)
-24/11/06 00:29:17 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on midway3-0116.rcc.local:42391 (size: 6.0 KiB, free: 434.4 MiB)
-24/11/06 00:29:17 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1513
-24/11/06 00:29:17 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at collect at /home/asarria/ideology/create_intervention_df_manual.py:36) (first 15 tasks are for partitions Vector(0))
-24/11/06 00:29:17 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
-24/11/06 00:29:17 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (midway3-0116.rcc.local, executor driver, partition 0, PROCESS_LOCAL, 4923 bytes) taskResourceAssignments Map()
-24/11/06 00:29:17 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
-24/11/06 00:29:17 INFO FileScanRDD: Reading File path: file:///home/asarria/ideology/data/session_texts.csv, range: 0-6277759708, partition values: [empty row]
-24/11/06 00:29:17 INFO CodeGenerator: Code generated in 136.740777 ms
-24/11/06 00:29:17 WARN CSVHeaderChecker: Number of column in CSV header is not equal to number of fields in the schema:
- Header length: 9, schema size: 8
+24/11/07 12:59:05 INFO FileSourceStrategy: Pushed Filters: 
+24/11/07 12:59:05 INFO FileSourceStrategy: Post-Scan Filters: (size(split(regexp_replace(interventions#7, ^\[|\]$, , 1), \], \[, -1), true) > 0),isnotnull(split(regexp_replace(interventions#7, ^\[|\]$, , 1), \], \[, -1))
+24/11/07 12:59:05 INFO FileSourceStrategy: Output Data Schema: struct<id: string, interventions: string>
+24/11/07 12:59:06 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+24/11/07 12:59:06 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+24/11/07 12:59:06 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+24/11/07 12:59:06 INFO CodeGenerator: Code generated in 171.122751 ms
+24/11/07 12:59:06 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 200.6 KiB, free 434.2 MiB)
+24/11/07 12:59:06 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 34.5 KiB, free 434.2 MiB)
+24/11/07 12:59:06 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on midway3-0149.rcc.local:35457 (size: 34.5 KiB, free: 434.4 MiB)
+24/11/07 12:59:06 INFO SparkContext: Created broadcast 0 from csv at NativeMethodAccessorImpl.java:0
+24/11/07 12:59:06 INFO FileSourceScanExec: Planning scan with bin packing, max size: 268435456 bytes, open cost is considered as scanning 4194304 bytes.
+24/11/07 12:59:06 INFO SparkContext: Starting job: csv at NativeMethodAccessorImpl.java:0
+24/11/07 12:59:06 INFO DAGScheduler: Got job 0 (csv at NativeMethodAccessorImpl.java:0) with 1 output partitions
+24/11/07 12:59:06 INFO DAGScheduler: Final stage: ResultStage 0 (csv at NativeMethodAccessorImpl.java:0)
+24/11/07 12:59:06 INFO DAGScheduler: Parents of final stage: List()
+24/11/07 12:59:06 INFO DAGScheduler: Missing parents: List()
+24/11/07 12:59:06 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[2] at csv at NativeMethodAccessorImpl.java:0), which has no missing parents
+24/11/07 12:59:06 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 222.1 KiB, free 434.0 MiB)
+24/11/07 12:59:06 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 79.3 KiB, free 433.9 MiB)
+24/11/07 12:59:06 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on midway3-0149.rcc.local:35457 (size: 79.3 KiB, free: 434.3 MiB)
+24/11/07 12:59:06 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1513
+24/11/07 12:59:06 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at csv at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+24/11/07 12:59:06 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+24/11/07 12:59:06 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (midway3-0149.rcc.local, executor driver, partition 0, PROCESS_LOCAL, 4923 bytes) taskResourceAssignments Map()
+24/11/07 12:59:06 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+24/11/07 12:59:07 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+24/11/07 12:59:07 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+24/11/07 12:59:07 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+24/11/07 12:59:07 INFO FileScanRDD: Reading File path: file:///home/asarria/ideology/data/session_texts.csv, range: 0-6277759708, partition values: [empty row]
+24/11/07 12:59:07 INFO CodeGenerator: Code generated in 11.069928 ms
+24/11/07 12:59:07 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+ Header: , intervention_pairs
+ Schema: id, interventions
+Expected: id but found: 
 CSV file: file:///home/asarria/ideology/data/session_texts.csv
-24/11/06 00:29:20 ERROR Executor: Exception in task 0.0 in stage 0.0 (TID 0)
-com.univocity.parsers.common.TextParsingException: Length of parsed input (4096001) exceeds the maximum number of characters defined in your parser settings (4096000). 
-Identified line separator characters in the parsed content. This may be the cause of the error. The line separator in your parser settings is set to '[lf]'. Parsed content: ...ación privada, los cuales, según el actual  [lf]
-Director de la Oficina Jurídica de la SAAB, se encuentran viciados debido a la violación del límite  [lf]
-[lf]
-29 [lf]
- [lf]
-[lf]
-para contratación directa (establecido en el artículo 18 del Manual de Contratación de la SAAB  [lf]
-Resolución 001 de 2009) y algunas otras irregularidades presentadas como la posible falsedad  [lf]
-en documentos, la alteración en fechas de las pólizas y la contratación en el término de seis  [lf]
-días. El informe de la oficina jurídica de la SAAB es de febrero 9 del año en curso. El límite para  [lf]
-invitación privada para el año 2011 era de $535.600.000, correspondiente a 1.000 SMLV de esa  [lf]
-vigencia.  [lf]
-[lf]
-*b-*No*-b* [lf]
-*b-*.*-b* [lf]
-*b-*FECHA *-b* [lf]
-*b-*CONTRATISTA *-b* [lf]
-*b-*OBJETO *-b* [lf]
-*b-*MODALIDAD *-b* [lf]
-*b-*VALOR *-b* [lf]
-[lf]
-59  [lf]
-30 dic de 2011  [lf]
-Habilidades  [lf]
-Estructurales  [lf]
-e  [lf]
-Ingeniería Ltda.  [lf]
-[lf]
-Microsectorización [lf]
-sectores 2 y 3 isl
-Parser Configuration: CsvParserSettings:
-	Auto configuration enabled=true
-	Auto-closing enabled=true
-	Autodetect column delimiter=false
-	Autodetect quotes=false
-	Column reordering enabled=true
-	Delimiters for detection=null
-	Empty value=
-	Escape unquoted values=false
-	Header extraction enabled=null
-	Headers=null
-	Ignore leading whitespaces=false
-	Ignore leading whitespaces in quotes=false
-	Ignore trailing whitespaces=false
-	Ignore trailing whitespaces in quotes=false
-	Input buffer size=1048576
-	Input reading on separate thread=false
-	Keep escape sequences=false
-	Keep quotes=false
-	Length of content displayed on error=1000
-	Line separator detection enabled=true
-	Maximum number of characters per column=4096000
-	Maximum number of columns=20480
-	Normalize escaped line separators=true
-	Null value=
-	Number of records to read=all
-	Processor=none
-	Restricting data in exceptions=false
-	RowProcessor error handler=null
-	Selected fields=none
-	Skip bits as whitespace=true
-	Skip empty lines=true
-	Unescaped quote handling=STOP_AT_DELIMITERFormat configuration:
-	CsvFormat:
-		Comment character=#
-		Field delimiter=,
-		Line separator (normalized)=\n
-		Line separator sequence=\n
-		Quote character="
-		Quote escape character="
-		Quote escape escape character=null
-Internal state when error was thrown: line=1483, column=5, record=214, charIndex=161776104, headers=[, id, date, chamber, type, raw_text, clean_text, intervention_pairs, interventions], content parsed=...$9.133 millones, adjudicados por la gerencia de la SAAB el  
-30 de diciembre del año 2011 bajo la modalidad de invitación privada, los cuales, según el actual  
-Director de la Oficina Jurídica de la SAAB, se encuentran viciados debido a la violación del límite  
-
-29 
- 
-
-para contratación directa (establecido en el artículo 18 del Manual de Contratación de la SAAB  
-Resolución 001 de 2009) y algunas otras irregularidades presentadas como la posible falsedad  
-en documentos, la alteración en fechas de las pólizas y la contratación en el término de seis  
-días. El informe de la oficina jurídica de la SAAB es de febrero 9 del año en curso. El límite para  
-invitación privada para el año 2011 era de $535.600.000, correspondiente a 1.000 SMLV de esa  
-vigencia.  
-
-*b-*No*-b* 
-*b-*.*-b* 
-*b-*FECHA *-b* 
-*b-*CONTRATISTA *-b* 
-*b-*OBJETO *-b* 
-*b-*MODALIDAD *-b* 
-*b-*VALOR *-b* 
-
-59  
-30 dic de 2011  
-Habilidades  
-Estructurales  
-e  
-Ingeniería Ltda.  
-
-Microsectorización 
-sectores 2 y 3 isl
-	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
-	at com.univocity.parsers.common.AbstractParser.parseNext(AbstractParser.java:623)
-	at org.apache.spark.sql.catalyst.csv.UnivocityParser$$anon$1.next(UnivocityParser.scala:397)
-	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
-	at scala.collection.TraversableOnce$FlattenOps$$anon$2.hasNext(TraversableOnce.scala:521)
-	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
-	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:116)
-	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
-	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:364)
-	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:890)
-	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:890)
-	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
-	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
-	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
-	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
-	at org.apache.spark.scheduler.Task.run(Task.scala:136)
-	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
-	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
-	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 4096000 out of bounds for length 4096000
-	at com.univocity.parsers.common.input.DefaultCharAppender.appendUntil(DefaultCharAppender.java:300)
-	at com.univocity.parsers.csv.CsvParser.parseQuotedValue(CsvParser.java:406)
-	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:177)
-	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
-	at com.univocity.parsers.common.AbstractParser.parseNext(AbstractParser.java:581)
-	... 20 more
-24/11/06 00:29:20 WARN TaskSetManager: Lost task 0.0 in stage 0.0 (TID 0) (midway3-0116.rcc.local executor driver): com.univocity.parsers.common.TextParsingException: Length of parsed input (4096001) exceeds the maximum number of characters defined in your parser settings (4096000). 
-Identified line separator characters in the parsed content. This may be the cause of the error. The line separator in your parser settings is set to '[lf]'. Parsed content: ...ación privada, los cuales, según el actual  [lf]
-Director de la Oficina Jurídica de la SAAB, se encuentran viciados debido a la violación del límite  [lf]
-[lf]
-29 [lf]
- [lf]
-[lf]
-para contratación directa (establecido en el artículo 18 del Manual de Contratación de la SAAB  [lf]
-Resolución 001 de 2009) y algunas otras irregularidades presentadas como la posible falsedad  [lf]
-en documentos, la alteración en fechas de las pólizas y la contratación en el término de seis  [lf]
-días. El informe de la oficina jurídica de la SAAB es de febrero 9 del año en curso. El límite para  [lf]
-invitación privada para el año 2011 era de $535.600.000, correspondiente a 1.000 SMLV de esa  [lf]
-vigencia.  [lf]
-[lf]
-*b-*No*-b* [lf]
-*b-*.*-b* [lf]
-*b-*FECHA *-b* [lf]
-*b-*CONTRATISTA *-b* [lf]
-*b-*OBJETO *-b* [lf]
-*b-*MODALIDAD *-b* [lf]
-*b-*VALOR *-b* [lf]
-[lf]
-59  [lf]
-30 dic de 2011  [lf]
-Habilidades  [lf]
-Estructurales  [lf]
-e  [lf]
-Ingeniería Ltda.  [lf]
-[lf]
-Microsectorización [lf]
-sectores 2 y 3 isl
-Parser Configuration: CsvParserSettings:
-	Auto configuration enabled=true
-	Auto-closing enabled=true
-	Autodetect column delimiter=false
-	Autodetect quotes=false
-	Column reordering enabled=true
-	Delimiters for detection=null
-	Empty value=
-	Escape unquoted values=false
-	Header extraction enabled=null
-	Headers=null
-	Ignore leading whitespaces=false
-	Ignore leading whitespaces in quotes=false
-	Ignore trailing whitespaces=false
-	Ignore trailing whitespaces in quotes=false
-	Input buffer size=1048576
-	Input reading on separate thread=false
-	Keep escape sequences=false
-	Keep quotes=false
-	Length of content displayed on error=1000
-	Line separator detection enabled=true
-	Maximum number of characters per column=4096000
-	Maximum number of columns=20480
-	Normalize escaped line separators=true
-	Null value=
-	Number of records to read=all
-	Processor=none
-	Restricting data in exceptions=false
-	RowProcessor error handler=null
-	Selected fields=none
-	Skip bits as whitespace=true
-	Skip empty lines=true
-	Unescaped quote handling=STOP_AT_DELIMITERFormat configuration:
-	CsvFormat:
-		Comment character=#
-		Field delimiter=,
-		Line separator (normalized)=\n
-		Line separator sequence=\n
-		Quote character="
-		Quote escape character="
-		Quote escape escape character=null
-Internal state when error was thrown: line=1483, column=5, record=214, charIndex=161776104, headers=[, id, date, chamber, type, raw_text, clean_text, intervention_pairs, interventions], content parsed=...$9.133 millones, adjudicados por la gerencia de la SAAB el  
-30 de diciembre del año 2011 bajo la modalidad de invitación privada, los cuales, según el actual  
-Director de la Oficina Jurídica de la SAAB, se encuentran viciados debido a la violación del límite  
-
-29 
- 
-
-para contratación directa (establecido en el artículo 18 del Manual de Contratación de la SAAB  
-Resolución 001 de 2009) y algunas otras irregularidades presentadas como la posible falsedad  
-en documentos, la alteración en fechas de las pólizas y la contratación en el término de seis  
-días. El informe de la oficina jurídica de la SAAB es de febrero 9 del año en curso. El límite para  
-invitación privada para el año 2011 era de $535.600.000, correspondiente a 1.000 SMLV de esa  
-vigencia.  
-
-*b-*No*-b* 
-*b-*.*-b* 
-*b-*FECHA *-b* 
-*b-*CONTRATISTA *-b* 
-*b-*OBJETO *-b* 
-*b-*MODALIDAD *-b* 
-*b-*VALOR *-b* 
-
-59  
-30 dic de 2011  
-Habilidades  
-Estructurales  
-e  
-Ingeniería Ltda.  
-
-Microsectorización 
-sectores 2 y 3 isl
-	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
-	at com.univocity.parsers.common.AbstractParser.parseNext(AbstractParser.java:623)
-	at org.apache.spark.sql.catalyst.csv.UnivocityParser$$anon$1.next(UnivocityParser.scala:397)
-	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
-	at scala.collection.TraversableOnce$FlattenOps$$anon$2.hasNext(TraversableOnce.scala:521)
-	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
-	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:116)
-	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
-	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:364)
-	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:890)
-	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:890)
-	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
-	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
-	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
-	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
-	at org.apache.spark.scheduler.Task.run(Task.scala:136)
-	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
-	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
-	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 4096000 out of bounds for length 4096000
-	at com.univocity.parsers.common.input.DefaultCharAppender.appendUntil(DefaultCharAppender.java:300)
-	at com.univocity.parsers.csv.CsvParser.parseQuotedValue(CsvParser.java:406)
-	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:177)
-	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
-	at com.univocity.parsers.common.AbstractParser.parseNext(AbstractParser.java:581)
-	... 20 more
-
-24/11/06 00:29:20 ERROR TaskSetManager: Task 0 in stage 0.0 failed 1 times; aborting job
-24/11/06 00:29:20 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
-24/11/06 00:29:20 INFO TaskSchedulerImpl: Cancelling stage 0
-24/11/06 00:29:20 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage cancelled
-24/11/06 00:29:20 INFO DAGScheduler: ResultStage 0 (collect at /home/asarria/ideology/create_intervention_df_manual.py:36) failed in 3.179 s due to Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (midway3-0116.rcc.local executor driver): com.univocity.parsers.common.TextParsingException: Length of parsed input (4096001) exceeds the maximum number of characters defined in your parser settings (4096000). 
-Identified line separator characters in the parsed content. This may be the cause of the error. The line separator in your parser settings is set to '[lf]'. Parsed content: ...ación privada, los cuales, según el actual  [lf]
-Director de la Oficina Jurídica de la SAAB, se encuentran viciados debido a la violación del límite  [lf]
-[lf]
-29 [lf]
- [lf]
-[lf]
-para contratación directa (establecido en el artículo 18 del Manual de Contratación de la SAAB  [lf]
-Resolución 001 de 2009) y algunas otras irregularidades presentadas como la posible falsedad  [lf]
-en documentos, la alteración en fechas de las pólizas y la contratación en el término de seis  [lf]
-días. El informe de la oficina jurídica de la SAAB es de febrero 9 del año en curso. El límite para  [lf]
-invitación privada para el año 2011 era de $535.600.000, correspondiente a 1.000 SMLV de esa  [lf]
-vigencia.  [lf]
-[lf]
-*b-*No*-b* [lf]
-*b-*.*-b* [lf]
-*b-*FECHA *-b* [lf]
-*b-*CONTRATISTA *-b* [lf]
-*b-*OBJETO *-b* [lf]
-*b-*MODALIDAD *-b* [lf]
-*b-*VALOR *-b* [lf]
-[lf]
-59  [lf]
-30 dic de 2011  [lf]
-Habilidades  [lf]
-Estructurales  [lf]
-e  [lf]
-Ingeniería Ltda.  [lf]
-[lf]
-Microsectorización [lf]
-sectores 2 y 3 isl
-Parser Configuration: CsvParserSettings:
-	Auto configuration enabled=true
-	Auto-closing enabled=true
-	Autodetect column delimiter=false
-	Autodetect quotes=false
-	Column reordering enabled=true
-	Delimiters for detection=null
-	Empty value=
-	Escape unquoted values=false
-	Header extraction enabled=null
-	Headers=null
-	Ignore leading whitespaces=false
-	Ignore leading whitespaces in quotes=false
-	Ignore trailing whitespaces=false
-	Ignore trailing whitespaces in quotes=false
-	Input buffer size=1048576
-	Input reading on separate thread=false
-	Keep escape sequences=false
-	Keep quotes=false
-	Length of content displayed on error=1000
-	Line separator detection enabled=true
-	Maximum number of characters per column=4096000
-	Maximum number of columns=20480
-	Normalize escaped line separators=true
-	Null value=
-	Number of records to read=all
-	Processor=none
-	Restricting data in exceptions=false
-	RowProcessor error handler=null
-	Selected fields=none
-	Skip bits as whitespace=true
-	Skip empty lines=true
-	Unescaped quote handling=STOP_AT_DELIMITERFormat configuration:
-	CsvFormat:
-		Comment character=#
-		Field delimiter=,
-		Line separator (normalized)=\n
-		Line separator sequence=\n
-		Quote character="
-		Quote escape character="
-		Quote escape escape character=null
-Internal state when error was thrown: line=1483, column=5, record=214, charIndex=161776104, headers=[, id, date, chamber, type, raw_text, clean_text, intervention_pairs, interventions], content parsed=...$9.133 millones, adjudicados por la gerencia de la SAAB el  
-30 de diciembre del año 2011 bajo la modalidad de invitación privada, los cuales, según el actual  
-Director de la Oficina Jurídica de la SAAB, se encuentran viciados debido a la violación del límite  
-
-29 
- 
-
-para contratación directa (establecido en el artículo 18 del Manual de Contratación de la SAAB  
-Resolución 001 de 2009) y algunas otras irregularidades presentadas como la posible falsedad  
-en documentos, la alteración en fechas de las pólizas y la contratación en el término de seis  
-días. El informe de la oficina jurídica de la SAAB es de febrero 9 del año en curso. El límite para  
-invitación privada para el año 2011 era de $535.600.000, correspondiente a 1.000 SMLV de esa  
-vigencia.  
-
-*b-*No*-b* 
-*b-*.*-b* 
-*b-*FECHA *-b* 
-*b-*CONTRATISTA *-b* 
-*b-*OBJETO *-b* 
-*b-*MODALIDAD *-b* 
-*b-*VALOR *-b* 
-
-59  
-30 dic de 2011  
-Habilidades  
-Estructurales  
-e  
-Ingeniería Ltda.  
-
-Microsectorización 
-sectores 2 y 3 isl
-	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
-	at com.univocity.parsers.common.AbstractParser.parseNext(AbstractParser.java:623)
-	at org.apache.spark.sql.catalyst.csv.UnivocityParser$$anon$1.next(UnivocityParser.scala:397)
-	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
-	at scala.collection.TraversableOnce$FlattenOps$$anon$2.hasNext(TraversableOnce.scala:521)
-	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
-	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:116)
-	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
-	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:364)
-	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:890)
-	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:890)
-	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
-	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
-	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
-	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
-	at org.apache.spark.scheduler.Task.run(Task.scala:136)
-	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
-	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
-	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 4096000 out of bounds for length 4096000
-	at com.univocity.parsers.common.input.DefaultCharAppender.appendUntil(DefaultCharAppender.java:300)
-	at com.univocity.parsers.csv.CsvParser.parseQuotedValue(CsvParser.java:406)
-	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:177)
-	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
-	at com.univocity.parsers.common.AbstractParser.parseNext(AbstractParser.java:581)
-	... 20 more
-
-Driver stacktrace:
-24/11/06 00:29:20 INFO DAGScheduler: Job 0 failed: collect at /home/asarria/ideology/create_intervention_df_manual.py:36, took 3.204860 s
-Traceback (most recent call last):
-  File "/home/asarria/ideology/create_intervention_df_manual.py", line 36, in <module>
-    rows = df.collect()
-  File "/software/spark-3.3.2-el8-x86_64/python/lib/pyspark.zip/pyspark/sql/dataframe.py", line 817, in collect
-  File "/software/spark-3.3.2-el8-x86_64/python/lib/py4j-0.10.9.5-src.zip/py4j/java_gateway.py", line 1321, in __call__
-  File "/software/spark-3.3.2-el8-x86_64/python/lib/pyspark.zip/pyspark/sql/utils.py", line 190, in deco
-  File "/software/spark-3.3.2-el8-x86_64/python/lib/py4j-0.10.9.5-src.zip/py4j/protocol.py", line 326, in get_return_value
-py4j.protocol.Py4JJavaError: An error occurred while calling o44.collectToPython.
-: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (midway3-0116.rcc.local executor driver): com.univocity.parsers.common.TextParsingException: Length of parsed input (4096001) exceeds the maximum number of characters defined in your parser settings (4096000). 
-Identified line separator characters in the parsed content. This may be the cause of the error. The line separator in your parser settings is set to '[lf]'. Parsed content: ...ación privada, los cuales, según el actual  [lf]
-Director de la Oficina Jurídica de la SAAB, se encuentran viciados debido a la violación del límite  [lf]
-[lf]
-29 [lf]
- [lf]
-[lf]
-para contratación directa (establecido en el artículo 18 del Manual de Contratación de la SAAB  [lf]
-Resolución 001 de 2009) y algunas otras irregularidades presentadas como la posible falsedad  [lf]
-en documentos, la alteración en fechas de las pólizas y la contratación en el término de seis  [lf]
-días. El informe de la oficina jurídica de la SAAB es de febrero 9 del año en curso. El límite para  [lf]
-invitación privada para el año 2011 era de $535.600.000, correspondiente a 1.000 SMLV de esa  [lf]
-vigencia.  [lf]
-[lf]
-*b-*No*-b* [lf]
-*b-*.*-b* [lf]
-*b-*FECHA *-b* [lf]
-*b-*CONTRATISTA *-b* [lf]
-*b-*OBJETO *-b* [lf]
-*b-*MODALIDAD *-b* [lf]
-*b-*VALOR *-b* [lf]
-[lf]
-59  [lf]
-30 dic de 2011  [lf]
-Habilidades  [lf]
-Estructurales  [lf]
-e  [lf]
-Ingeniería Ltda.  [lf]
-[lf]
-Microsectorización [lf]
-sectores 2 y 3 isl
-Parser Configuration: CsvParserSettings:
-	Auto configuration enabled=true
-	Auto-closing enabled=true
-	Autodetect column delimiter=false
-	Autodetect quotes=false
-	Column reordering enabled=true
-	Delimiters for detection=null
-	Empty value=
-	Escape unquoted values=false
-	Header extraction enabled=null
-	Headers=null
-	Ignore leading whitespaces=false
-	Ignore leading whitespaces in quotes=false
-	Ignore trailing whitespaces=false
-	Ignore trailing whitespaces in quotes=false
-	Input buffer size=1048576
-	Input reading on separate thread=false
-	Keep escape sequences=false
-	Keep quotes=false
-	Length of content displayed on error=1000
-	Line separator detection enabled=true
-	Maximum number of characters per column=4096000
-	Maximum number of columns=20480
-	Normalize escaped line separators=true
-	Null value=
-	Number of records to read=all
-	Processor=none
-	Restricting data in exceptions=false
-	RowProcessor error handler=null
-	Selected fields=none
-	Skip bits as whitespace=true
-	Skip empty lines=true
-	Unescaped quote handling=STOP_AT_DELIMITERFormat configuration:
-	CsvFormat:
-		Comment character=#
-		Field delimiter=,
-		Line separator (normalized)=\n
-		Line separator sequence=\n
-		Quote character="
-		Quote escape character="
-		Quote escape escape character=null
-Internal state when error was thrown: line=1483, column=5, record=214, charIndex=161776104, headers=[, id, date, chamber, type, raw_text, clean_text, intervention_pairs, interventions], content parsed=...$9.133 millones, adjudicados por la gerencia de la SAAB el  
-30 de diciembre del año 2011 bajo la modalidad de invitación privada, los cuales, según el actual  
-Director de la Oficina Jurídica de la SAAB, se encuentran viciados debido a la violación del límite  
-
-29 
- 
-
-para contratación directa (establecido en el artículo 18 del Manual de Contratación de la SAAB  
-Resolución 001 de 2009) y algunas otras irregularidades presentadas como la posible falsedad  
-en documentos, la alteración en fechas de las pólizas y la contratación en el término de seis  
-días. El informe de la oficina jurídica de la SAAB es de febrero 9 del año en curso. El límite para  
-invitación privada para el año 2011 era de $535.600.000, correspondiente a 1.000 SMLV de esa  
-vigencia.  
-
-*b-*No*-b* 
-*b-*.*-b* 
-*b-*FECHA *-b* 
-*b-*CONTRATISTA *-b* 
-*b-*OBJETO *-b* 
-*b-*MODALIDAD *-b* 
-*b-*VALOR *-b* 
-
-59  
-30 dic de 2011  
-Habilidades  
-Estructurales  
-e  
-Ingeniería Ltda.  
-
-Microsectorización 
-sectores 2 y 3 isl
-	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
-	at com.univocity.parsers.common.AbstractParser.parseNext(AbstractParser.java:623)
-	at org.apache.spark.sql.catalyst.csv.UnivocityParser$$anon$1.next(UnivocityParser.scala:397)
-	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
-	at scala.collection.TraversableOnce$FlattenOps$$anon$2.hasNext(TraversableOnce.scala:521)
-	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
-	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:116)
-	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
-	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:364)
-	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:890)
-	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:890)
-	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
-	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
-	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
-	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
-	at org.apache.spark.scheduler.Task.run(Task.scala:136)
-	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
-	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
-	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 4096000 out of bounds for length 4096000
-	at com.univocity.parsers.common.input.DefaultCharAppender.appendUntil(DefaultCharAppender.java:300)
-	at com.univocity.parsers.csv.CsvParser.parseQuotedValue(CsvParser.java:406)
-	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:177)
-	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
-	at com.univocity.parsers.common.AbstractParser.parseNext(AbstractParser.java:581)
-	... 20 more
-
-Driver stacktrace:
-	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2672)
-	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2608)
-	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2607)
-	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
-	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
-	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
-	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2607)
-	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1182)
-	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1182)
-	at scala.Option.foreach(Option.scala:407)
-	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1182)
-	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:2860)
-	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2802)
-	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2791)
-	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
-	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:952)
-	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2238)
-	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2259)
-	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2278)
-	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2303)
-	at org.apache.spark.rdd.RDD.$anonfun$collect$1(RDD.scala:1021)
-	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
-	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
-	at org.apache.spark.rdd.RDD.withScope(RDD.scala:406)
-	at org.apache.spark.rdd.RDD.collect(RDD.scala:1020)
-	at org.apache.spark.sql.execution.SparkPlan.executeCollect(SparkPlan.scala:424)
-	at org.apache.spark.sql.Dataset.$anonfun$collectToPython$1(Dataset.scala:3688)
-	at org.apache.spark.sql.Dataset.$anonfun$withAction$2(Dataset.scala:3858)
-	at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:510)
-	at org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3856)
-	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:109)
-	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:169)
-	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:95)
-	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:779)
-	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:64)
-	at org.apache.spark.sql.Dataset.withAction(Dataset.scala:3856)
-	at org.apache.spark.sql.Dataset.collectToPython(Dataset.scala:3685)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
-	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
-	at py4j.Gateway.invoke(Gateway.java:282)
-	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
-	at py4j.commands.CallCommand.execute(CallCommand.java:79)
-	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
-	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: com.univocity.parsers.common.TextParsingException: Length of parsed input (4096001) exceeds the maximum number of characters defined in your parser settings (4096000). 
-Identified line separator characters in the parsed content. This may be the cause of the error. The line separator in your parser settings is set to '[lf]'. Parsed content: ...ación privada, los cuales, según el actual  [lf]
-Director de la Oficina Jurídica de la SAAB, se encuentran viciados debido a la violación del límite  [lf]
-[lf]
-29 [lf]
- [lf]
-[lf]
-para contratación directa (establecido en el artículo 18 del Manual de Contratación de la SAAB  [lf]
-Resolución 001 de 2009) y algunas otras irregularidades presentadas como la posible falsedad  [lf]
-en documentos, la alteración en fechas de las pólizas y la contratación en el término de seis  [lf]
-días. El informe de la oficina jurídica de la SAAB es de febrero 9 del año en curso. El límite para  [lf]
-invitación privada para el año 2011 era de $535.600.000, correspondiente a 1.000 SMLV de esa  [lf]
-vigencia.  [lf]
-[lf]
-*b-*No*-b* [lf]
-*b-*.*-b* [lf]
-*b-*FECHA *-b* [lf]
-*b-*CONTRATISTA *-b* [lf]
-*b-*OBJETO *-b* [lf]
-*b-*MODALIDAD *-b* [lf]
-*b-*VALOR *-b* [lf]
-[lf]
-59  [lf]
-30 dic de 2011  [lf]
-Habilidades  [lf]
-Estructurales  [lf]
-e  [lf]
-Ingeniería Ltda.  [lf]
-[lf]
-Microsectorización [lf]
-sectores 2 y 3 isl
-Parser Configuration: CsvParserSettings:
-	Auto configuration enabled=true
-	Auto-closing enabled=true
-	Autodetect column delimiter=false
-	Autodetect quotes=false
-	Column reordering enabled=true
-	Delimiters for detection=null
-	Empty value=
-	Escape unquoted values=false
-	Header extraction enabled=null
-	Headers=null
-	Ignore leading whitespaces=false
-	Ignore leading whitespaces in quotes=false
-	Ignore trailing whitespaces=false
-	Ignore trailing whitespaces in quotes=false
-	Input buffer size=1048576
-	Input reading on separate thread=false
-	Keep escape sequences=false
-	Keep quotes=false
-	Length of content displayed on error=1000
-	Line separator detection enabled=true
-	Maximum number of characters per column=4096000
-	Maximum number of columns=20480
-	Normalize escaped line separators=true
-	Null value=
-	Number of records to read=all
-	Processor=none
-	Restricting data in exceptions=false
-	RowProcessor error handler=null
-	Selected fields=none
-	Skip bits as whitespace=true
-	Skip empty lines=true
-	Unescaped quote handling=STOP_AT_DELIMITERFormat configuration:
-	CsvFormat:
-		Comment character=#
-		Field delimiter=,
-		Line separator (normalized)=\n
-		Line separator sequence=\n
-		Quote character="
-		Quote escape character="
-		Quote escape escape character=null
-Internal state when error was thrown: line=1483, column=5, record=214, charIndex=161776104, headers=[, id, date, chamber, type, raw_text, clean_text, intervention_pairs, interventions], content parsed=...$9.133 millones, adjudicados por la gerencia de la SAAB el  
-30 de diciembre del año 2011 bajo la modalidad de invitación privada, los cuales, según el actual  
-Director de la Oficina Jurídica de la SAAB, se encuentran viciados debido a la violación del límite  
-
-29 
- 
-
-para contratación directa (establecido en el artículo 18 del Manual de Contratación de la SAAB  
-Resolución 001 de 2009) y algunas otras irregularidades presentadas como la posible falsedad  
-en documentos, la alteración en fechas de las pólizas y la contratación en el término de seis  
-días. El informe de la oficina jurídica de la SAAB es de febrero 9 del año en curso. El límite para  
-invitación privada para el año 2011 era de $535.600.000, correspondiente a 1.000 SMLV de esa  
-vigencia.  
-
-*b-*No*-b* 
-*b-*.*-b* 
-*b-*FECHA *-b* 
-*b-*CONTRATISTA *-b* 
-*b-*OBJETO *-b* 
-*b-*MODALIDAD *-b* 
-*b-*VALOR *-b* 
-
-59  
-30 dic de 2011  
-Habilidades  
-Estructurales  
-e  
-Ingeniería Ltda.  
-
-Microsectorización 
-sectores 2 y 3 isl
-	at com.univocity.parsers.common.AbstractParser.handleException(AbstractParser.java:402)
-	at com.univocity.parsers.common.AbstractParser.parseNext(AbstractParser.java:623)
-	at org.apache.spark.sql.catalyst.csv.UnivocityParser$$anon$1.next(UnivocityParser.scala:397)
-	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
-	at scala.collection.TraversableOnce$FlattenOps$$anon$2.hasNext(TraversableOnce.scala:521)
-	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
-	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:116)
-	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
-	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:364)
-	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:890)
-	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:890)
-	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
-	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:365)
-	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
-	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:90)
-	at org.apache.spark.scheduler.Task.run(Task.scala:136)
-	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$3(Executor.scala:548)
-	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:1504)
-	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:551)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	... 1 more
-Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 4096000 out of bounds for length 4096000
-	at com.univocity.parsers.common.input.DefaultCharAppender.appendUntil(DefaultCharAppender.java:300)
-	at com.univocity.parsers.csv.CsvParser.parseQuotedValue(CsvParser.java:406)
-	at com.univocity.parsers.csv.CsvParser.parseSingleDelimiterRecord(CsvParser.java:177)
-	at com.univocity.parsers.csv.CsvParser.parseRecord(CsvParser.java:109)
-	at com.univocity.parsers.common.AbstractParser.parseNext(AbstractParser.java:581)
-	... 20 more
-
-24/11/06 00:29:20 INFO SparkContext: Invoking stop() from shutdown hook
-24/11/06 00:29:20 INFO SparkUI: Stopped Spark web UI at http://midway3-0116.rcc.local:4040
-24/11/06 00:29:20 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
-24/11/06 00:29:20 INFO MemoryStore: MemoryStore cleared
-24/11/06 00:29:20 INFO BlockManager: BlockManager stopped
-24/11/06 00:29:20 INFO BlockManagerMaster: BlockManagerMaster stopped
-24/11/06 00:29:20 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
-24/11/06 00:29:20 INFO SparkContext: Successfully stopped SparkContext
-24/11/06 00:29:20 INFO ShutdownHookManager: Shutdown hook called
-24/11/06 00:29:20 INFO ShutdownHookManager: Deleting directory /tmp/spark-9660a588-3d76-40c5-a73e-c3d1f9be52c0/pyspark-3f73244d-08db-43f3-95f1-fd3807424b89
-24/11/06 00:29:20 INFO ShutdownHookManager: Deleting directory /tmp/spark-db77d60e-20f7-4376-bb78-edbf15a6e905
-24/11/06 00:29:20 INFO ShutdownHookManager: Deleting directory /tmp/spark-9660a588-3d76-40c5-a73e-c3d1f9be52c0
+24/11/07 13:03:06 INFO FileOutputCommitter: Saved output of task 'attempt_202411071259069111252787110411704_0000_m_000000_0' to file:/home/asarria/ideology/data/interventions/_temporary/0/task_202411071259069111252787110411704_0000_m_000000
+24/11/07 13:03:06 INFO SparkHadoopMapRedUtil: attempt_202411071259069111252787110411704_0000_m_000000_0: Committed. Elapsed time: 2 ms.
+24/11/07 13:03:06 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2721 bytes result sent to driver
+24/11/07 13:03:06 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 239983 ms on midway3-0149.rcc.local (executor driver) (1/1)
+24/11/07 13:03:06 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+24/11/07 13:03:06 INFO DAGScheduler: ResultStage 0 (csv at NativeMethodAccessorImpl.java:0) finished in 240.089 s
+24/11/07 13:03:06 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+24/11/07 13:03:06 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+24/11/07 13:03:06 INFO DAGScheduler: Job 0 finished: csv at NativeMethodAccessorImpl.java:0, took 240.116868 s
+24/11/07 13:03:06 INFO FileFormatWriter: Start to commit write Job 486384ce-110b-4ac5-89db-05f084ec8ff1.
+24/11/07 13:03:06 INFO FileFormatWriter: Write Job 486384ce-110b-4ac5-89db-05f084ec8ff1 committed. Elapsed time: 10 ms.
+24/11/07 13:03:06 INFO FileFormatWriter: Finished processing stats for write job 486384ce-110b-4ac5-89db-05f084ec8ff1.
+24/11/07 13:03:07 INFO FileSourceStrategy: Pushed Filters: 
+24/11/07 13:03:07 INFO FileSourceStrategy: Post-Scan Filters: (size(split(regexp_replace(interventions#7, ^\[|\]$, , 1), \], \[, -1), true) > 0),isnotnull(split(regexp_replace(interventions#7, ^\[|\]$, , 1), \], \[, -1))
+24/11/07 13:03:07 INFO FileSourceStrategy: Output Data Schema: struct<interventions: string>
+24/11/07 13:03:07 INFO CodeGenerator: Code generated in 24.953968 ms
+24/11/07 13:03:07 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 200.6 KiB, free 433.7 MiB)
+24/11/07 13:03:07 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 34.5 KiB, free 433.6 MiB)
+24/11/07 13:03:07 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on midway3-0149.rcc.local:35457 (size: 34.5 KiB, free: 434.3 MiB)
+24/11/07 13:03:07 INFO SparkContext: Created broadcast 2 from count at NativeMethodAccessorImpl.java:0
+24/11/07 13:03:07 INFO FileSourceScanExec: Planning scan with bin packing, max size: 268435456 bytes, open cost is considered as scanning 4194304 bytes.
+24/11/07 13:03:07 INFO DAGScheduler: Registering RDD 6 (count at NativeMethodAccessorImpl.java:0) as input to shuffle 0
+24/11/07 13:03:07 INFO DAGScheduler: Got map stage job 1 (count at NativeMethodAccessorImpl.java:0) with 1 output partitions
+24/11/07 13:03:07 INFO DAGScheduler: Final stage: ShuffleMapStage 1 (count at NativeMethodAccessorImpl.java:0)
+24/11/07 13:03:07 INFO DAGScheduler: Parents of final stage: List()
+24/11/07 13:03:07 INFO DAGScheduler: Missing parents: List()
+24/11/07 13:03:07 INFO DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[6] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+24/11/07 13:03:07 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 24.1 KiB, free 433.6 MiB)
+24/11/07 13:03:07 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 10.5 KiB, free 433.6 MiB)
+24/11/07 13:03:07 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on midway3-0149.rcc.local:35457 (size: 10.5 KiB, free: 434.2 MiB)
+24/11/07 13:03:07 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1513
+24/11/07 13:03:07 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[6] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+24/11/07 13:03:07 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+24/11/07 13:03:07 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (midway3-0149.rcc.local, executor driver, partition 0, PROCESS_LOCAL, 4912 bytes) taskResourceAssignments Map()
+24/11/07 13:03:07 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+24/11/07 13:03:07 INFO FileScanRDD: Reading File path: file:///home/asarria/ideology/data/session_texts.csv, range: 0-6277759708, partition values: [empty row]
+24/11/07 13:03:07 INFO CodeGenerator: Code generated in 6.025541 ms
+24/11/07 13:03:07 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+ Header: intervention_pairs
+ Schema: interventions
+Expected: interventions but found: intervention_pairs
+CSV file: file:///home/asarria/ideology/data/session_texts.csv
+24/11/07 13:03:07 INFO BlockManagerInfo: Removed broadcast_1_piece0 on midway3-0149.rcc.local:35457 in memory (size: 79.3 KiB, free: 434.3 MiB)
+24/11/07 13:03:07 INFO BlockManagerInfo: Removed broadcast_0_piece0 on midway3-0149.rcc.local:35457 in memory (size: 34.5 KiB, free: 434.4 MiB)
+24/11/07 13:06:56 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 2089 bytes result sent to driver
+24/11/07 13:06:56 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 229702 ms on midway3-0149.rcc.local (executor driver) (1/1)
+24/11/07 13:06:56 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+24/11/07 13:06:56 INFO DAGScheduler: ShuffleMapStage 1 (count at NativeMethodAccessorImpl.java:0) finished in 229.717 s
+24/11/07 13:06:56 INFO DAGScheduler: looking for newly runnable stages
+24/11/07 13:06:56 INFO DAGScheduler: running: Set()
+24/11/07 13:06:56 INFO DAGScheduler: waiting: Set()
+24/11/07 13:06:56 INFO DAGScheduler: failed: Set()
+24/11/07 13:06:56 INFO CodeGenerator: Code generated in 7.439441 ms
+24/11/07 13:06:56 INFO SparkContext: Starting job: count at NativeMethodAccessorImpl.java:0
+24/11/07 13:06:56 INFO DAGScheduler: Got job 2 (count at NativeMethodAccessorImpl.java:0) with 1 output partitions
+24/11/07 13:06:56 INFO DAGScheduler: Final stage: ResultStage 3 (count at NativeMethodAccessorImpl.java:0)
+24/11/07 13:06:56 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 2)
+24/11/07 13:06:56 INFO DAGScheduler: Missing parents: List()
+24/11/07 13:06:56 INFO DAGScheduler: Submitting ResultStage 3 (MapPartitionsRDD[9] at count at NativeMethodAccessorImpl.java:0), which has no missing parents
+24/11/07 13:06:56 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 11.1 KiB, free 434.1 MiB)
+24/11/07 13:06:56 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 5.5 KiB, free 434.1 MiB)
+24/11/07 13:06:56 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on midway3-0149.rcc.local:35457 (size: 5.5 KiB, free: 434.4 MiB)
+24/11/07 13:06:56 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1513
+24/11/07 13:06:56 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 3 (MapPartitionsRDD[9] at count at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+24/11/07 13:06:56 INFO TaskSchedulerImpl: Adding task set 3.0 with 1 tasks resource profile 0
+24/11/07 13:06:56 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 2) (midway3-0149.rcc.local, executor driver, partition 0, NODE_LOCAL, 4453 bytes) taskResourceAssignments Map()
+24/11/07 13:06:56 INFO Executor: Running task 0.0 in stage 3.0 (TID 2)
+24/11/07 13:06:57 INFO ShuffleBlockFetcherIterator: Getting 1 (60.0 B) non-empty blocks including 1 (60.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+24/11/07 13:06:57 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 43 ms
+24/11/07 13:06:57 INFO Executor: Finished task 0.0 in stage 3.0 (TID 2). 2656 bytes result sent to driver
+24/11/07 13:06:57 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 2) in 83 ms on midway3-0149.rcc.local (executor driver) (1/1)
+24/11/07 13:06:57 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+24/11/07 13:06:57 INFO DAGScheduler: ResultStage 3 (count at NativeMethodAccessorImpl.java:0) finished in 0.094 s
+24/11/07 13:06:57 INFO DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+24/11/07 13:06:57 INFO TaskSchedulerImpl: Killing all running tasks in stage 3: Stage finished
+24/11/07 13:06:57 INFO DAGScheduler: Job 2 finished: count at NativeMethodAccessorImpl.java:0, took 0.130975 s
+Number of rows in intervention DataFrame: 8992
+24/11/07 13:06:57 INFO SparkUI: Stopped Spark web UI at http://midway3-0149.rcc.local:4040
+24/11/07 13:06:57 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+24/11/07 13:06:57 INFO MemoryStore: MemoryStore cleared
+24/11/07 13:06:57 INFO BlockManager: BlockManager stopped
+24/11/07 13:06:57 INFO BlockManagerMaster: BlockManagerMaster stopped
+24/11/07 13:06:57 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+24/11/07 13:06:57 INFO SparkContext: Successfully stopped SparkContext
+24/11/07 13:06:57 INFO ShutdownHookManager: Shutdown hook called
+24/11/07 13:06:57 INFO ShutdownHookManager: Deleting directory /tmp/spark-5a252ad1-8820-43b9-9b50-f726441cd2f2
+24/11/07 13:06:57 INFO ShutdownHookManager: Deleting directory /tmp/spark-62491d8d-4788-44af-ad9b-7bef5e249109
+24/11/07 13:06:57 INFO ShutdownHookManager: Deleting directory /tmp/spark-62491d8d-4788-44af-ad9b-7bef5e249109/pyspark-8596396c-9c58-4109-a287-e4ce4e9e91f1
